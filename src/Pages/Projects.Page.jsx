@@ -64,7 +64,7 @@ const ProjectsPage = () => {
             controls
           ></video> */}
           <iframe
-            className="w-full h-full min-h-[250px] md:min-w-[700px] md:min-h-[350px] lg:min-h-[600px] my-[15px]"
+            className="w-full h-full min-w-[340px] min-h-[250px] md:min-w-[700px] md:min-h-[350px] lg:min-h-[600px] my-[15px]"
             src={`https://www.youtube.com/embed/${
               Projects.find(
                 (project) => project.id === videoIndex
