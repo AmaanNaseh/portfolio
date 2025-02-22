@@ -4,7 +4,7 @@ import { GrCertificate } from "react-icons/gr";
 
 const Certifications = () => {
   return (
-    <div className="flex flex-col md:flex-row flex-wrap p-4 md:p-8 items-center justify-center gap-8 lg:gap-16 lg:mx-4">
+    <div className="flex flex-col md:flex-row flex-wrap md:p-8 items-center justify-center gap-8 lg:gap-16 lg:mx-4">
       {Certificates.map((certificate, key) => {
         return (
           <>
@@ -12,7 +12,7 @@ const Certifications = () => {
               key={key}
               className="bg-[#FFF0BD] z-10 ring-blue-100 ring-2 rounded-2xl shadow-[0_-7px_10px_rgba(255,255,255,0.6),0_7px_10px_rgba(255,255,255,0.6)] text-black p-4 flex flex-col items-center justify-center gap-4"
             >
-              <div className="w-[300px] bg-black p-[5px]">
+              <div className="w-[275px] md:w-[300px] bg-black p-[5px]">
                 <img className="w-full" src={certificate.imgSrc} alt="..." />
               </div>
               <h3>{certificate.title}</h3>

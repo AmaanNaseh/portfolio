@@ -5,6 +5,8 @@ export default {
     extend: {
       animation: {
         slide: "slide linear infinite 10s",
+        "spin-slow": "spin 75s linear infinite",
+        rotate: "rotate 25s linear infinite",
       },
       keyframes: {
         slide: {
@@ -13,6 +15,17 @@ export default {
           },
           "100%": {
             transform: "translateX(-100%)",
+          },
+        },
+        rotate: {
+          "0%": {
+            transform: "rotateY(0deg)",
+          },
+          "50%": {
+            transform: "rotateY(180deg)",
+          },
+          "100%": {
+            transform: "rotateY(0deg)",
           },
         },
       },

@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const ProjectsComponent = () => {
   return (
-    <div className="flex flex-col md:flex-row flex-wrap p-4 md:p-8 items-center justify-center gap-8 lg:gap-16 lg:mx-4">
+    <div className="flex flex-col md:flex-row flex-wrap md:p-8 items-center justify-center gap-8 lg:gap-16 lg:mx-4">
       {Projects.map((project, key) => {
         return (
           <>
@@ -25,7 +25,7 @@ const ProjectsComponent = () => {
                   : "bg-white"
               }`}
             >
-              <div className="w-[300px] bg-black p-[5px]">
+              <div className="w-[275px] md:w-[300px] bg-black p-[5px]">
                 <img className="w-full" src={project.imgSrc} alt="..." />
               </div>
               <h3>{project.title}</h3>

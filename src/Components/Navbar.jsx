@@ -41,6 +41,9 @@ const Navbar = () => {
           <Link to={"/researches"}>
             <li>Researches</li>
           </Link>
+          <Link to={"/attributions"}>
+            <li>Attributions</li>
+          </Link>
         </ul>
 
         <GiHamburgerMenu
@@ -66,6 +69,9 @@ const Navbar = () => {
             </Link>
             <Link to={"/researches"}>
               <li>Researches</li>
+            </Link>
+            <Link to={"/attributions"}>
+              <li>Attributions</li>
             </Link>
           </ul>
         ) : (

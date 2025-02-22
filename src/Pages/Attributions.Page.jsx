@@ -204,6 +204,11 @@ const AttributionsPage = () => {
             Ar camera icons created by flatart_icons - Flaticon
           </a>
         </li>
+        <li>
+          <a href="https://www.vecteezy.com/free-png/isolated">
+            Isolated PNGs by Vecteezy
+          </a>
+        </li>
       </ul>
     </div>
   );
