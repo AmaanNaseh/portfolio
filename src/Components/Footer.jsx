@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="w-[200px] z-[-1] absolute bottom-12 animate-spin-slow">
         <img className="w-full" src={SaturnImg} alt="..." />
       </div>
-      <p className="text-center">
+      <p className="text-center px-4 shadow-[0_-2px_5px_rgba(255,255,255,1),0_2px_5px_rgba(255,255,255,1)]">
         @{new Date().getFullYear()} All rights reserved
       </p>
     </footer>

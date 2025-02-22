@@ -58,11 +58,21 @@ const ProjectsPage = () => {
           })}
         </div>
         <div className="lg:w-[78%] lg:p-4 text-black">
-          <video
+          {/* <video
             className="w-full h-full my-[15px]"
             src={Projects.find((project) => project.id === videoIndex).videoSrc}
             controls
-          ></video>
+          ></video> */}
+          <iframe
+            className="w-full h-full min-h-[250px] md:min-w-[700px] md:min-h-[350px] lg:min-h-[600px] my-[15px]"
+            src={`https://www.youtube.com/embed/${
+              Projects.find(
+                (project) => project.id === videoIndex
+              ).videoSrc.split("youtu.be/")[1]
+            }`}
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
         </div>
       </div>
     </>
