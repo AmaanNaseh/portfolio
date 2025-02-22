@@ -59,7 +59,7 @@ const ProjectsPage = () => {
         </div>
         <div className="lg:w-[78%] lg:p-4 text-black">
           {/* <video
-            className="w-full h-full my-[15px]"
+            className="w-full h-full my-[15px]" 
             src={Projects.find((project) => project.id === videoIndex).videoSrc}
             controls
           ></video> */}

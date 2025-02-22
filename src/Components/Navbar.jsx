@@ -27,22 +27,33 @@ const Navbar = () => {
         </Link>
         <ul className="hidden lg:inline-flex flex-wrap items-center gap-4">
           <Link to={"/projects/0"}>
-            <li>Projects</li>
+            <li className="hover:border-b-[2px] border-black hover:scale-105">
+              Projects
+            </li>
           </Link>
-          <li onClick={handleScrollToCert} className="cursor-pointer">
+          <li
+            onClick={handleScrollToCert}
+            className="cursor-pointer hover:border-b-[2px] border-black hover:scale-105"
+          >
             Certifications
           </li>
 
           {/* <ScrollLink to="cert" smooth={true} duration={500} offset={-175}>
           </ScrollLink> */}
           <Link to={"/freelance"}>
-            <li>Freelancing</li>
+            <li className="hover:border-b-[2px] border-black hover:scale-105">
+              Freelancing
+            </li>
           </Link>
           <Link to={"/researches"}>
-            <li>Researches</li>
+            <li className="hover:border-b-[2px] border-black hover:scale-105">
+              Researches
+            </li>
           </Link>
           <Link to={"/attributions"}>
-            <li>Attributions</li>
+            <li className="hover:border-b-[2px] border-black hover:scale-105">
+              Attributions
+            </li>
           </Link>
         </ul>
 
@@ -54,24 +65,35 @@ const Navbar = () => {
         />
 
         {isSideNavActive ? (
-          <ul className="lg:hidden z-20 flex flex-col items-center my-4 gap-4 bg-[#f5f5f5] shadow-[-4px_-5px_7px_rgba(147,197,253,0.5)] rounded-2xl fixed top-[54px] right-0 bottom-0 h-full p-4">
+          <ul className="lg:hidden text-sm md:text-md z-20 flex flex-col items-center gap-4 my-4 py-10 px-4 rounded-2xl fixed top-[54px] right-2 h-fit bg-[#f5f5f5] shadow-[-4px_-5px_7px_rgba(147,197,253,0.5)]">
             <Link to={"/projects/0"}>
-              <li>Projects</li>
+              <li className="border-b-[2px] border-black hover:scale-105">
+                Projects
+              </li>
             </Link>
-            <li onClick={handleScrollToCert} className="cursor-pointer">
+            <li
+              onClick={handleScrollToCert}
+              className="cursor-pointer border-b-[2px] border-black hover:scale-105"
+            >
               Certifications
             </li>
 
             {/* <ScrollLink to="cert" smooth={true} duration={500} offset={-175}>
           </ScrollLink> */}
             <Link to={"/freelance"}>
-              <li>Freelancing</li>
+              <li className="border-b-[2px] border-black hover:scale-105">
+                Freelancing
+              </li>
             </Link>
             <Link to={"/researches"}>
-              <li>Researches</li>
+              <li className="border-b-[2px] border-black hover:scale-105">
+                Researches
+              </li>
             </Link>
             <Link to={"/attributions"}>
-              <li>Attributions</li>
+              <li className="border-b-[2px] border-black hover:scale-105">
+                Attributions
+              </li>
             </Link>
           </ul>
         ) : (
