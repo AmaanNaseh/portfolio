@@ -27,7 +27,7 @@ const HomePage = () => {
             <img className="w-full h-full" src={MyImg} alt="amaan" />
           </div>
           <div className="flex flex-col items-center justify-center gap-8 w-fit m-4 p-4 lg:p-8 md:mx-10 border-white border-[2px]">
-            <h1 className="text-center font-semibold italic text-xl md:text-2xl lg:text-4xl animate-rotate">
+            <h1 className="text-center font-semibold italic text-xl md:text-2xl lg:text-4xl">
               Amaan Naseh
             </h1>
             <h1 className="text-center font-semibold italic text-lg md:text-xl lg:text-2xl">
