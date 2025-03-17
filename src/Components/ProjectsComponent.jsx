@@ -11,19 +11,7 @@ const ProjectsComponent = () => {
           <>
             <div
               key={key}
-              className={`z-10 min-h-[305px] font-bold text-black p-4 flex flex-col items-center justify-center gap-4 lg:text-lg ring-blue-100 ring-2 rounded-2xl shadow-[0_-7px_10px_rgba(255,255,255,0.6),0_7px_10px_rgba(255,255,255,0.6)] ${
-                project.id === 0 || project.id === 1
-                  ? "bg-[#1674c9]"
-                  : project.id === 2
-                  ? "bg-green-300"
-                  : project.id === 3
-                  ? "bg-[#FF0000]"
-                  : project.id === 4
-                  ? "bg-yellow-300"
-                  : project.id === 5
-                  ? "bg-orange-400"
-                  : "bg-white"
-              }`}
+              className={`z-10 min-h-[305px] font-bold text-white bg-white/50 hover:bg-[#1674c9] p-4 flex flex-col items-center justify-center gap-4 lg:text-lg ring-blue-100 ring-2 rounded-2xl shadow-[0_-7px_10px_rgba(255,255,255,0.6),0_7px_10px_rgba(255,255,255,0.6)]`}
             >
               <div className="w-[275px] md:w-[300px] bg-black p-[5px]">
                 <img className="w-full" src={project.imgSrc} alt="..." />
