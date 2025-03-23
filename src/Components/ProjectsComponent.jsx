@@ -1,11 +1,39 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { FaLaptop } from "react-icons/fa";
 import { Projects } from "../Datasets/Projects";
 import { Link } from "react-router-dom";
 
 const ProjectsComponent = () => {
+  const [isVisible, setIsVisible] = useState(false);
+
+  const handleScroll = () => {
+    const divPosn = document.getElementById("projectDiv").offsetTop;
+    const scrollPosn = window.scrollY + window.innerHeight;
+
+    if (scrollPosn > divPosn + 100) {
+      setIsVisible(true);
+    } else {
+      setIsVisible(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <div className="flex flex-col md:flex-row flex-wrap md:p-8 items-center justify-center gap-8 lg:gap-16 lg:mx-4">
+    <div
+      id="projectDiv"
+      className={`flex flex-col md:flex-row flex-wrap md:p-8 items-center justify-center gap-8 lg:gap-16 lg:mx-4 transition-all transform duration-[1100ms] ${
+        isVisible
+          ? "translate-x-0 opacity-100"
+          : "translate-x-[-100px] opacity-0"
+      }`}
+    >
       {Projects.map((project, key) => {
         return (
           <>

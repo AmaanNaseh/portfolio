@@ -117,11 +117,8 @@ const AttributionsPage = () => {
           </a>
         </li>
         <li>
-          <a
-            href="https://www.flaticon.com/free-icons/curriculum-vitae"
-            title="curriculum vitae icons"
-          >
-            Curriculum vitae icons created by kerismaker - Flaticon
+          <a href="https://www.flaticon.com/free-icons/cv" title="CV icons">
+            CV icons created by Freepik - Flaticon
           </a>
         </li>
         <li>

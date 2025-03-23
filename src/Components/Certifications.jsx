@@ -1,10 +1,38 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Certificates } from "../Datasets/Certificates";
 import { GrCertificate } from "react-icons/gr";
 
 const Certifications = () => {
+  const [isVisible, setIsVisible] = useState(false);
+
+  const handleScroll = () => {
+    const divPosn = document.getElementById("certDiv").offsetTop;
+    const scrollPosn = window.scrollY + window.innerHeight;
+
+    if (scrollPosn > divPosn + 100) {
+      setIsVisible(true);
+    } else {
+      setIsVisible(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <div className="flex flex-col md:flex-row flex-wrap md:p-8 items-center justify-center gap-8 lg:gap-16 lg:mx-4">
+    <div
+      id="certDiv"
+      className={`flex flex-col md:flex-row flex-wrap md:p-8 items-center justify-center gap-8 lg:gap-16 lg:mx-4 transition-all trasnform duration-[1100ms] ${
+        isVisible
+          ? "translate-x-0 opacity-100"
+          : "translate-x-[100px] opacity-0"
+      }`}
+    >
       {Certificates.map((certificate, key) => {
         return (
           <>
