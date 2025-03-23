@@ -58,7 +58,7 @@ const SelfSection = () => {
             target="_blank"
             rel="noreferrer"
             href="https://hackjmi2025.devfolio.co/projects?show_winners=true"
-            className="md:mx-3 mx-1 text-sm md:text-md lg:text-lg border-white border-b-[2px] cursor-pointer transition-all duration-100 hover:scale-105 inline-flex gap-2 w-fit items-center"
+            className="md:mx-3 mx-1 text-sm md:text-md lg:text-lg cursor-pointer transition-all duration-100 hover:scale-105 inline-flex gap-2 w-fit items-center"
           >
             HackJMI25
             <FaTrophy className="text-[#FFD700]" />
@@ -68,7 +68,7 @@ const SelfSection = () => {
             target="_blank"
             rel="noreferrer"
             href="https://www.linkedin.com/posts/amaan-naseh_icapie-icapie2024-ggsipu-activity-7236372105762631680-ShdJ?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEC2yRsBsl2oQ6uJ1yU3zu7TyP0_R102lrs"
-            className="md:mx-3 mx-1 text-sm md:text-md lg:text-lg border-white border-b-[2px] cursor-pointer transition-all duration-100 hover:scale-105 inline-flex gap-2 w-fit items-center"
+            className="md:mx-3 mx-1 text-sm md:text-md lg:text-lg cursor-pointer transition-all duration-100 hover:scale-105 inline-flex gap-2 w-fit items-center"
           >
             ICAPIE 2024
             <FaTrophy className="text-[#FFD700]" />
@@ -78,7 +78,7 @@ const SelfSection = () => {
           <a
             href={Resume}
             download
-            className="border-white hover:border-[2px] px-4 py-3 transition-all duration-100"
+            className="border-denim-600 hover:border-[2px] hover:scale-105 px-4 py-3 transition-transform duration-[500ms]"
           >
             Resume
           </a>
@@ -86,15 +86,15 @@ const SelfSection = () => {
             href="mailto:naseh.amaan@gmail.com"
             target="_blank"
             rel="noreferrer"
-            className="border-white hover:border-[2px] px-4 py-3 transition-all duration-100"
+            className="border-denim-600 hover:border-[2px] hover:scale-105 px-4 py-3 transition-transform duration-[500ms]"
           >
-            <CgMail className="text-3xl" />
+            <CgMail className="text-4xl" />
           </a>
           <a
             href="https://github.com/AmaanNaseh"
             target="_blank"
             rel="noreferrer"
-            className="border-white hover:border-[2px] px-4 py-3"
+            className="border-denim-600 hover:border-[2px] hover:scale-105 px-4 py-3 transition-transform duration-[500ms]"
           >
             <FaGithub className="text-3xl" />
           </a>
@@ -102,13 +102,13 @@ const SelfSection = () => {
             href="https://www.linkedin.com/in/amaan-naseh/"
             target="_blank"
             rel="noreferrer"
-            className="border-white hover:border-[2px] px-4 py-3 transition-all duration-100"
+            className="border-denim-600 hover:border-[2px] hover:scale-105 px-4 py-3 transition-transform duration-[500ms]"
           >
             <IoLogoLinkedin className="text-3xl" />
           </a>
         </div>
         <a href="https://wa.me/918287591040" target="_blank" rel="noreferrer">
-          <button className="bg-[#f7f7f7] flex items-center justify-center gap-2 font-bold px-4 py-3 rounded-full text-xl md:text-2xl text-black transition-transform duration-200 hover:scale-110 hover:shadow-sm hover:shadow-white">
+          <button className="bg-denim-600 hover:bg-denim-500 text-white flex items-center justify-center gap-2 font-bold px-3 py-2 rounded-full text-xl md:text-2xl transition-transform duration-[500ms] hover:scale-110">
             Hire Me <FaBusinessTime className="text-3xl" />
           </button>
         </a>

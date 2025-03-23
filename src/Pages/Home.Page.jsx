@@ -6,7 +6,7 @@ import SkillSlider from "../Components/SkillSlider";
 const HomePage = () => {
   return (
     <>
-      <div className="my-12" id="posterSlider">
+      <div className="my-12">
         <PosterSlider />
       </div>
 

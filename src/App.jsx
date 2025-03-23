@@ -8,10 +8,10 @@ import ResearchesPage from "./Pages/Researches.Page";
 import ExperiencePage from "./Pages/Experience.Page";
 import Footer from "./Components/Footer";
 import { FaArrowUp } from "react-icons/fa";
-import { Link } from "react-scroll";
 
 const App = () => {
   const [isScrollerVisible, setIsScrollerVisible] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(false);
 
   const handleScroller = () => {
     if (window.scrollY > 500) {
@@ -30,12 +30,26 @@ const App = () => {
   }, []);
 
   useEffect(() => {
-    document.body.classList.add("bg-[#0a0a0a]");
+    document.body.classList.add(
+      `${isDarkMode ? "bg-[#0a0a0a]" : "bg-body-gradient"}`
+    );
 
     return () => {
-      document.body.classList.remove("bg-[#0a0a0a]");
+      document.body.classList.remove(
+        `${isDarkMode ? "bg-[#0a0a0a]" : "bg-body-gradient"}`
+      );
     };
-  }, []);
+  }, [isDarkMode]);
+
+  useEffect(() => {
+    document.body.classList.add(`${isDarkMode ? "text-white" : "text-black"}`);
+
+    return () => {
+      document.body.classList.remove(
+        `${isDarkMode ? "text-white" : "text-black"}`
+      );
+    };
+  }, [isDarkMode]);
 
   const location = useLocation();
 
@@ -45,7 +59,7 @@ const App = () => {
 
   return (
     <>
-      <Navbar />
+      <Navbar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
       <div className="m-5 min-h-[75vh] overflow-x-hidden">
         <Routes>
           <Route path="/" element={<HomePage />} />
@@ -56,15 +70,16 @@ const App = () => {
         </Routes>
       </div>
 
-      <Link to="posterSlider" smooth={true} duration={500} offset={-250}>
-        <div
-          className={`bg-[#1764c9] text-2xl rounded-full cursor-pointer transition-transform transform duration-1000 z-50 w-[40px] h-[40px] md:w-[50px] md:h-[50px] fixed bottom-4 left-4 md:left-8 md:bottom-8 ${
-            isScrollerVisible ? "flex" : "hidden"
-          } items-center justify-center`}
-        >
-          <FaArrowUp />
-        </div>
-      </Link>
+      <div
+        onClick={() => {
+          window.scrollTo(0, 0);
+        }}
+        className={`bg-denim-400 hover:bg-denim-300 text-denim-700 text-2xl rounded-full cursor-pointer transition-transform transform duration-1000 z-50 w-[40px] h-[40px] md:w-[50px] md:h-[50px] fixed bottom-4 left-4 md:left-8 md:bottom-8 ${
+          isScrollerVisible ? "flex" : "hidden"
+        } items-center justify-center`}
+      >
+        <FaArrowUp />
+      </div>
 
       <div>
         <Footer />

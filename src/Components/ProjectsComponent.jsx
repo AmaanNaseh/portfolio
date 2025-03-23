@@ -39,7 +39,7 @@ const ProjectsComponent = () => {
           <>
             <div
               key={key}
-              className={`z-10 min-h-[305px] font-bold text-white bg-white/50 hover:bg-[#1674c9] p-4 flex flex-col items-center justify-center gap-4 lg:text-lg ring-blue-100 ring-2 rounded-2xl shadow-[0_-7px_10px_rgba(255,255,255,0.6),0_7px_10px_rgba(255,255,255,0.6)]`}
+              className={`z-10 min-h-[305px] font-bold hover:bg-denim-400 p-4 flex flex-col items-center justify-center gap-4 lg:text-lg ring-blue-100 bg-denim-200 ring-2 rounded-2xl shadow-[0_-7px_10px_rgba(70,156,235,0.6),0_7px_10px_rgba(70,156,235,0.6)]`}
             >
               <div className="w-[275px] md:w-[300px] bg-black p-[5px]">
                 <img className="w-full" src={project.imgSrc} alt="..." />
@@ -47,7 +47,7 @@ const ProjectsComponent = () => {
               <h3>{project.title}</h3>
               <Link
                 to={`/projects/${project.id}`}
-                className="hover:border-b-[2px] border-black flex items-center justify-center gap-4 text-white bg-black hover:scale-105 hover:z-10 hover:shadow-lg hover:bg-black/75 px-4 py-2 rounded-lg font-bold text-md md:text-lg lg:text-xl"
+                className="hover:border-b-[2px] border-black flex items-center justify-center gap-4  bg-denim-600 text-white hover:scale-105 hover:z-10 hover:shadow-lg hover:bg-black/75 px-4 py-2 rounded-lg font-bold text-md md:text-lg lg:text-xl"
               >
                 View <FaLaptop />
               </Link>

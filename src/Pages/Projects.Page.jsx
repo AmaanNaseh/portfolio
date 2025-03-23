@@ -22,10 +22,8 @@ const ProjectsPage = () => {
                   onClick={() => {
                     setVideoIndex(project.id);
                   }}
-                  className={`p-4 z-10 ring-[rgba(255,240,215,0.85)] ring-2 text-black rounded-lg shadow-md shadow-[#FFF0BD] flex items-center justify-between gap-5 mb-8 min-w-full hover:cursor-pointer hover:bg-[rgba(255,240,215,1)] ${
-                    project.id === videoIndex
-                      ? "bg-[rgba(255,240,215,1)]"
-                      : "bg-[rgba(255,240,215,0.8)] "
+                  className={`p-4 z-10 text-black rounded-lg flex items-center justify-between gap-5 mb-8 min-w-full hover:cursor-pointer ${
+                    project.id === videoIndex ? "bg-denim-300" : "bg-denim-100 "
                   }`}
                 >
                   <div className="w-[100px] md:w-[200px]">
