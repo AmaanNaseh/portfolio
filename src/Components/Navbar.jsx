@@ -38,7 +38,7 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
             }}
             className="hidden lg:block cursor-pointer"
           >
-            <GoSun className="text-3xl font-bold" />
+            <GoSun className="text-3xl font-bold transition-all transform hover:scale-105 duration-700" />
           </div>
         ) : (
           <div
@@ -47,7 +47,7 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
             }}
             className="hidden lg:block cursor-pointer"
           >
-            <IoMoon className="text-3xl font-bold" />
+            <IoMoon className="text-3xl font-bold transition-all transform hover:scale-105 duration-700" />
           </div>
         )}
 
@@ -106,7 +106,7 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
                 }}
                 className="lg:hidden cursor-pointer"
               >
-                <GoSun className="text-3xl font-bold" />
+                <GoSun className="text-3xl font-bold transition-all transform hover:scale-105 duration-700" />
               </li>
             ) : (
               <li
@@ -115,7 +115,7 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
                 }}
                 className="lg:hidden cursor-pointer"
               >
-                <IoMoon className="text-3xl font-bold" />
+                <IoMoon className="text-3xl font-bold transition-all transform hover:scale-105 duration-700" />
               </li>
             )}
           </ul>

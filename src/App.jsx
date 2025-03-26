@@ -3,12 +3,12 @@ import { Routes, Route, useLocation } from "react-router-dom";
 import HomePage from "./Pages/Home.Page";
 import Navbar from "./Components/Navbar";
 import AttributionsPage from "./Pages/Attributions.Page";
+import EducationPage from "./Pages/Education.Page";
 import ProjectsPage from "./Pages/Projects.Page";
 import ResearchesPage from "./Pages/Researches.Page";
 import ExperiencePage from "./Pages/Experience.Page";
 import Footer from "./Components/Footer";
 import { FaArrowUp } from "react-icons/fa";
-import EducationPage from "./Pages/Education.Page";
 
 const App = () => {
   const [isScrollerVisible, setIsScrollerVisible] = useState(false);

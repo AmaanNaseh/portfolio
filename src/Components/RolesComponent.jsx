@@ -26,7 +26,7 @@ const RolesComponent = () => {
   return (
     <div
       id="rolesDiv"
-      className={`flex flex-col md:flex-row flex-wrap md:p-8 items-center justify-center gap-8 lg:gap-16 lg:mx-4 transition-all trasnform duration-[1100ms] ${
+      className={`flex flex-col md:flex-row flex-wrap md:p-8 items-center justify-center gap-8 lg:gap-16 lg:mx-4 transition-all transform duration-[1100ms] ${
         isVisible
           ? "translate-x-0 opacity-100"
           : "translate-x-[-100px] opacity-0"
@@ -47,7 +47,9 @@ const RolesComponent = () => {
               </h3>
               <p className="italic">{role.position}</p>
               <p>{role.duration}</p>
-              <p className="text-justify max-w-[300px]">{role.outcomes}</p>
+              <p className="text-justify max-w-[300px]">
+                <span className="font-bold mr-1">Journey:</span> {role.journey}
+              </p>
             </div>
           </>
         );

@@ -27,7 +27,7 @@ const InternshipsComponent = () => {
   return (
     <div
       id="internshipsDiv"
-      className={`flex flex-col md:flex-row flex-wrap md:p-8 items-center justify-center gap-8 lg:gap-16 lg:mx-4 transition-all trasnform duration-[1100ms] ${
+      className={`flex flex-col md:flex-row flex-wrap md:p-8 items-center justify-center gap-8 lg:gap-16 lg:mx-4 transition-all transform duration-[1100ms] ${
         isVisible
           ? "translate-x-0 opacity-100"
           : "translate-x-[100px] opacity-0"

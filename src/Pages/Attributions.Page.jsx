@@ -195,10 +195,10 @@ const AttributionsPage = () => {
         </li>
         <li>
           <a
-            href="https://www.flaticon.com/free-icons/ar-camera"
-            title="ar camera icons"
+            href="https://www.flaticon.com/free-icons/photography"
+            title="photography icons"
           >
-            Ar camera icons created by flatart_icons - Flaticon
+            Photography icons created by Freepik - Flaticon
           </a>
         </li>
         <li>

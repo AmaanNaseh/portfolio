@@ -29,7 +29,7 @@ const EducationComponent = () => {
       </h1>
       <table
         id="educationTable"
-        className={`border-separate border-spacing-1 text-[12px] md:text-sm md:border-spacing-5 text-black transition-all trasnform duration-[1100ms] ${
+        className={`border-separate border-spacing-1 text-[12px] md:text-sm md:border-spacing-5 text-black transition-all transform duration-[1100ms] ${
           isVisible
             ? "translate-x-0 opacity-100"
             : "translate-x-[-100px] opacity-0"

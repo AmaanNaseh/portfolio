@@ -45,6 +45,9 @@ const ProjectsComponent = () => {
                 <img className="w-full" src={project.imgSrc} alt="..." />
               </div>
               <h3>{project.title}</h3>
+              <p className="max-w-[250px] font-normal text-sm my-2">
+                <span className="font-bold mr-1">Tech:</span> {project.tech}
+              </p>
               <Link
                 to={`/projects/${project.id}`}
                 className="hover:border-b-[2px] border-black flex items-center justify-center gap-4  bg-denim-600 text-white hover:scale-105 hover:z-10 hover:shadow-lg hover:bg-black/75 px-4 py-2 rounded-lg font-bold text-md md:text-lg lg:text-xl"

@@ -1,13 +1,50 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import PosterSlider from "../Components/PosterSlider";
 import SelfSection from "../Components/SelfSection";
 import SkillSlider from "../Components/SkillSlider";
 
-import WebDesignLogo from "../assets/ExperiencePage/WebDesign.png";
-import MLDevLogo from "../assets/ExperiencePage/MLDev.png";
-import PhotographyLogo from "../assets/ExperiencePage/Photography.png";
+import WebDesignLogo from "../assets/Homepage/WebDesign.png";
+import MLDevLogo from "../assets/Homepage/MLDev.png";
+import PhotographyLogo from "../assets/Homepage/Photography.png";
 
 const HomePage = () => {
+  const [isVisible1, setIsVisible1] = useState(false);
+  const [isVisible2, setIsVisible2] = useState(false);
+  const [isVisible3, setIsVisible3] = useState(false);
+
+  const handleScroll = () => {
+    const divPosn1 = document.getElementById("mybgDiv1").offsetTop;
+    const divPosn2 = document.getElementById("mybgDiv2").offsetTop;
+    const divPosn3 = document.getElementById("mybgDiv3").offsetTop;
+    const scrollPosn = window.scrollY + window.innerHeight;
+
+    if (scrollPosn > divPosn1 + 100) {
+      setIsVisible1(true);
+    } else {
+      setIsVisible1(false);
+    }
+
+    if (scrollPosn > divPosn2 + 100) {
+      setIsVisible2(true);
+    } else {
+      setIsVisible2(false);
+    }
+
+    if (scrollPosn > divPosn3 + 100) {
+      setIsVisible3(true);
+    } else {
+      setIsVisible3(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <>
       <div className="my-12">
@@ -24,8 +61,15 @@ const HomePage = () => {
           <SkillSlider />
         </div>
 
-        <div className="my-12 mt-20 mx-4 md:mx-8 flex flex-col items-center justify-center gap-20">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-8 md:gap-20 lg:gap-40">
+        <div
+          className={`my-12 mt-20 mx-4 md:mx-8 flex flex-col items-center justify-center gap-20`}
+        >
+          <div
+            id="mybgDiv1"
+            className={`flex flex-col md:flex-row items-center justify-between gap-8 md:gap-20 lg:gap-40 transition-all transform duration-[1500ms] ${
+              isVisible1 ? "translate-x-0 " : "translate-x-[-250px]"
+            }`}
+          >
             <div className="w-[300px]">
               <img src={WebDesignLogo} alt="laptop" className="w-full" />
             </div>
@@ -39,9 +83,14 @@ const HomePage = () => {
               experiences.
             </p>
           </div>
-          <div className="flex flex-col md:flex-row-reverse items-center justify-between gap-8 md:gap-20 lg:gap-40">
+          <div
+            id="mybgDiv2"
+            className={`flex flex-col md:flex-row-reverse items-center justify-between gap-8 md:gap-20 lg:gap-40 transition-all transform duration-[1500ms] ${
+              isVisible2 ? "translate-x-0 " : "translate-x-[250px]"
+            }`}
+          >
             <div className="w-[300px]">
-              <img src={MLDevLogo} alt="laptop" className="w-full" />
+              <img src={MLDevLogo} alt="laptop" className="w-[90%]" />
             </div>
             <p className="text-justify bg-clip-text text-transparent bg-title-gradient font-semibold max-w-[300px] lg:max-w-[600px]">
               As an enthusiast of AI and Machine Learning, I am dedicated to
@@ -52,9 +101,14 @@ const HomePage = () => {
               create innovative solutions that push the boundaries of technology
             </p>
           </div>
-          <div className="flex flex-col md:flex-row items-center justify-between gap-8 md:gap-20 lg:gap-40">
+          <div
+            id="mybgDiv3"
+            className={`flex flex-col md:flex-row items-center justify-between gap-8 md:gap-20 lg:gap-40 transition-all transform duration-[1500ms] ${
+              isVisible3 ? "translate-x-0 " : "translate-x-[-250px]"
+            }`}
+          >
             <div className="w-[300px]">
-              <img src={PhotographyLogo} alt="laptop" className="w-full" />
+              <img src={PhotographyLogo} alt="laptop" className="w-[75%]" />
             </div>
             <p className="text-justify bg-clip-text text-transparent bg-title-gradient font-semibold max-w-[300px] lg:max-w-[600px]">
               Photography is my creative outlet, capturing moments that tell

@@ -2,6 +2,7 @@ export const Projects = [
   {
     id: 0,
     title: "EduShala",
+    tech: "MERN, Tailwind CSS, ML, NLP, Flask, HTML, CSS, Js",
     imgSrc: "../../assets/Edushala.png",
     videoSrc: "https://youtu.be/_jCDPb56rGI",
     deployedLink: "https://edushala.vercel.app/",
@@ -10,6 +11,7 @@ export const Projects = [
   {
     id: 1,
     title: "EduShala Hardware",
+    tech: "Arduino UNO, C++, Python",
     imgSrc: "../../assets/Edushala_Hardware.jpg",
     videoSrc: "https://youtu.be/ohnX_LWwDoE",
     deployedLink: "https://edushala.vercel.app/",
@@ -18,6 +20,7 @@ export const Projects = [
   {
     id: 2,
     title: "Kisan Kranti",
+    tech: "MERN, Tailwind CSS, APIs, ML, Flask",
     imgSrc: "../../assets/KisanKranti.png",
     videoSrc: "https://youtu.be/LVCE_83GQlY",
     deployedLink: "https://kisan-kranti.vercel.app/",
@@ -26,6 +29,7 @@ export const Projects = [
   {
     id: 3,
     title: "Youtube Clone",
+    tech: "React Js, CSS, Google Cloud API call",
     imgSrc: "../../assets/Vidtube.png",
     videoSrc: "https://youtu.be/bQJQSOm7pPU",
     deployedLink: "https://vidtube-ytclone.netlify.app/",
@@ -35,6 +39,7 @@ export const Projects = [
   {
     id: 4,
     title: "Contacts Management",
+    tech: "Node Js, Express Js, MongoDB, JWT Auth",
     imgSrc: "../../assets/ContactsManagement.jpg",
     videoSrc: "https://youtu.be/ECWtZkUnEmE",
     deployedLink:
@@ -44,6 +49,7 @@ export const Projects = [
   {
     id: 5,
     title: "AI ML DL Projects",
+    tech: "Machine Learning",
     imgSrc: "../../assets/AIProjects.jpg",
     videoSrc: "https://youtu.be/N9_2F5qC5YE",
     deployedLink:
