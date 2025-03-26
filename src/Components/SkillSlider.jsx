@@ -30,13 +30,13 @@ const SkillSlider = () => {
         <div className="w-[100px] mx-[1px] bg-white p-1">
           <img src={ExpressJsLogo} alt="express" className="w-full" />
         </div>
-        <div className="w-[100px] mx-[1px] p-1">
+        <div className="w-[100px] mx-[1px] p-1 bg-blue-500">
           <img src={ReactJsLogo} alt="react" className="w-full" />
         </div>
         <div className="w-[100px] mx-[1px] bg-green-600/90 p-1">
           <img src={NodeJsLogo} alt="node" className="w-full" />
         </div>
-        <div className="w-[100px] mx-[1px]">
+        <div className="w-[100px] mx-[1px] bg-blue-500">
           <img src={TailwindCSSLogo} alt="tailwindcss" className="w-full" />
         </div>
         <div className="w-[100px] mx-[1px]  bg-white p-1">

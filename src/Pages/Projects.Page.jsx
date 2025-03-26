@@ -11,9 +11,9 @@ const ProjectsPage = () => {
     <>
       <div className="flex flex-col-reverse justify-center lg:flex-row items-center gap-10">
         <div className="lg:w-[20%]">
-          <h2 className="text-center text-xl md:text-2xl lg:text-3xl font-bold mb-4 md:mb-8 lg:mb-10">
-            Projects Feed
-          </h2>
+          <h1 className="text-xl md:text-2xl lg:text-3xl font-bold italic text-center my-4 bg-clip-text text-transparent bg-title-gradient">
+            Project Feed
+          </h1>
           {Projects.map((project, key) => {
             return (
               <>

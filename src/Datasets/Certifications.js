@@ -9,7 +9,7 @@ export const Certifications = [
     imgSrc: "../../assets/certificate2.png",
     title: "Pantech AI Internship",
     date: "May 2024",
-    link: "https://learn.pantechsolutions.net/courses/1156032/certificate",
+    link: "https://drive.google.com/file/d/1lANWCGNXW4Cmr1m3VXR1lO-FC3e0NbcM/view?usp=sharing",
   },
   {
     imgSrc: "../../assets/certificate3.png",

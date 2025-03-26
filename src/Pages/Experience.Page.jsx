@@ -1,14 +1,14 @@
 import React from "react";
 import ProjectsComponent from "../Components/ProjectsComponent";
-import CertificationsComponent from "../Components/CertificationsComponent";
 import { Link } from "react-router-dom";
+import RolesComponent from "../Components/RolesComponent";
+import InternshipsComponent from "../Components/InternshipsComponent";
 
 const ExperiencePage = () => {
   return (
     <>
-      <div>Experience</div>
-      <div id="proj" className="my-12">
-        <h1 className="text-xl md:text-2xl lg:text-3xl font-bold italic text-center mb-8 mt-12">
+      <div className="my-4 mb-14">
+        <h1 className="text-xl md:text-2xl lg:text-3xl font-bold italic text-center my-2 bg-clip-text text-transparent bg-title-gradient">
           Projects
         </h1>
         <ProjectsComponent />
@@ -22,11 +22,18 @@ const ExperiencePage = () => {
         </Link>
       </div>
 
-      <div className="my-12 py-10" id="cert">
-        <h1 className="text-xl md:text-2xl lg:text-3xl font-bold italic text-center mb-8 mt-12">
-          Certifications
+      <div className="my-14">
+        <h1 className="text-xl md:text-2xl lg:text-3xl font-bold italic text-center my-2 bg-clip-text text-transparent bg-title-gradient">
+          Internships
         </h1>
-        <CertificationsComponent />
+        <InternshipsComponent />
+      </div>
+
+      <div className="my-14">
+        <h1 className="text-xl md:text-2xl lg:text-3xl font-bold italic text-center my-2 bg-clip-text text-transparent bg-title-gradient">
+          Roles and Responsibilities
+        </h1>
+        <RolesComponent />
       </div>
     </>
   );

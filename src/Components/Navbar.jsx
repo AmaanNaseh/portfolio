@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoMoon } from "react-icons/io5";
 import { GoSun } from "react-icons/go";
@@ -7,27 +7,17 @@ import { GoSun } from "react-icons/go";
 const Navbar = ({ isDarkMode, setIsDarkMode }) => {
   const [isSideNavActive, setIsSideNavActive] = useState(false);
 
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
-  const handleScrollToCert = () => {
-    navigate("/experience");
-    setTimeout(() => {
-      const targetCert = document.querySelector("#cert");
-      if (targetCert) {
-        targetCert.scrollIntoView({ behavior: "smooth" });
-      }
-    }, 100);
-  };
-
-  const handleScrollToProjects = () => {
-    navigate("/experience");
-    setTimeout(() => {
-      const targetProjects = document.querySelector("#proj");
-      if (targetProjects) {
-        targetProjects.scrollIntoView({ behavior: "smooth" });
-      }
-    }, 100);
-  };
+  // const handleScrollToCert = () => {
+  //   navigate("/experience");
+  //   setTimeout(() => {
+  //     const targetCert = document.querySelector("#cert");
+  //     if (targetCert) {
+  //       targetCert.scrollIntoView({ behavior: "smooth" });
+  //     }
+  //   }, 100);
+  // };
 
   return (
     <>
@@ -62,25 +52,17 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
         )}
 
         <ul className="hidden lg:inline-flex flex-wrap items-center gap-4">
+          <Link to={"/education"}>
+            <li className="transition-transform transform duration-100 hover:border-b-[2px] border-black font-semibold hover:scale-105">
+              Education
+            </li>
+          </Link>
+
           <Link to={"/experience"}>
             <li className="transition-transform transform duration-100 hover:border-b-[2px] border-black font-semibold hover:scale-105">
               Experience
             </li>
           </Link>
-
-          <li
-            onClick={handleScrollToProjects}
-            className="cursor-pointer transition-transform transform duration-100 hover:border-b-[2px] border-black font-semibold hover:scale-105"
-          >
-            Projects
-          </li>
-
-          <li
-            onClick={handleScrollToCert}
-            className="cursor-pointer transition-transform transform duration-100 hover:border-b-[2px] border-black font-semibold hover:scale-105"
-          >
-            Certifications
-          </li>
 
           <Link to={"/researches"}>
             <li className="transition-transform transform duration-100 hover:border-b-[2px] border-black font-semibold hover:scale-105">
@@ -102,26 +84,16 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
               isDarkMode ? "bg-denim-600" : "bg-denim-400"
             }`}
           >
+            <Link to={"/education"}>
+              <li className="transition-transform transform duration-100 hover:border-b-[2px] border-black font-semibold hover:scale-105">
+                Education
+              </li>
+            </Link>
             <Link to={"/experience"}>
               <li className="transition-transform transform duration-100 hover:border-b-[2px] border-black font-semibold hover:scale-105">
                 Experience
               </li>
             </Link>
-
-            <li
-              onClick={handleScrollToProjects}
-              className="cursor-pointer transition-transform transform duration-100 hover:border-b-[2px] border-black font-semibold hover:scale-105"
-            >
-              Projects
-            </li>
-
-            <li
-              onClick={handleScrollToCert}
-              className="cursor-pointer transition-transform transform duration-100 hover:border-b-[2px] border-black font-semibold hover:scale-105"
-            >
-              Certifications
-            </li>
-
             <Link to={"/researches"}>
               <li className="transition-transform transform duration-100 hover:border-b-[2px] border-black font-semibold hover:scale-105">
                 Researches

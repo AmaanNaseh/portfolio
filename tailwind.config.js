@@ -10,7 +10,9 @@ export default {
       },
       backgroundImage: {
         "body-gradient":
-          "linear-gradient(to top, #C7E1F9 0%, #ECF5FD 50%, #C7E1F9 100%)",
+          "linear-gradient(to bottom, #54A5ED 0%, #B9DAF8 35%, #B9DAF8 65%, #54A5ED 100%)",
+        "title-gradient":
+          "linear-gradient(to bottom, #1F3C6E 0%, #1A78D2 25%, #1F3C6E 50%, #1A78D2 75%, #1F3C6E 100%)",
       },
       colors: {
         denim: {

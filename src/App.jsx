@@ -8,6 +8,7 @@ import ResearchesPage from "./Pages/Researches.Page";
 import ExperiencePage from "./Pages/Experience.Page";
 import Footer from "./Components/Footer";
 import { FaArrowUp } from "react-icons/fa";
+import EducationPage from "./Pages/Education.Page";
 
 const App = () => {
   const [isScrollerVisible, setIsScrollerVisible] = useState(false);
@@ -65,6 +66,7 @@ const App = () => {
           <Route path="/" element={<HomePage />} />
           <Route path="/projects/:id" element={<ProjectsPage />} />
           <Route path="/attributions" element={<AttributionsPage />} />
+          <Route path="/education" element={<EducationPage />} />
           <Route path="/experience" element={<ExperiencePage />} />
           <Route path="/researches" element={<ResearchesPage />} />
         </Routes>

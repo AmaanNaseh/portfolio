@@ -30,7 +30,7 @@ const PosterSlider = () => {
 
   return (
     <>
-      <div className="mx-4 md:mx-8">
+      <div className="mx-8">
         <Slider {...settings}>
           <div className="w-[300px] h-[200px] md:h-[400px]">
             <img src={heroImg1} alt="img 1" className="w-full h-full" />
