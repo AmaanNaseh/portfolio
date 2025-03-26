@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
-import { Certificates } from "../Datasets/Certificates";
+import { Certifications } from "../Datasets/Certifications";
 import { GrCertificate } from "react-icons/gr";
 
-const Certifications = () => {
+const CertificationsComponent = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   const handleScroll = () => {
@@ -33,7 +33,7 @@ const Certifications = () => {
           : "translate-x-[100px] opacity-0"
       }`}
     >
-      {Certificates.map((certificate, key) => {
+      {Certifications.map((certificate, key) => {
         return (
           <>
             <div
@@ -61,4 +61,4 @@ const Certifications = () => {
   );
 };
 
-export default Certifications;
+export default CertificationsComponent;

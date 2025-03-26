@@ -1,4 +1,4 @@
-export const Certificates = [
+export const Certifications = [
   {
     imgSrc: "../../assets/certificate1.png",
     title: "Devtown FSWD Internship",

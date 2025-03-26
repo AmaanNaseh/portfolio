@@ -1,6 +1,6 @@
 import React from "react";
 import ProjectsComponent from "../Components/ProjectsComponent";
-import Certifications from "../Components/Certifications";
+import CertificationsComponent from "../Components/CertificationsComponent";
 import { Link } from "react-router-dom";
 
 const ExperiencePage = () => {
@@ -26,7 +26,7 @@ const ExperiencePage = () => {
         <h1 className="text-xl md:text-2xl lg:text-3xl font-bold italic text-center mb-8 mt-12">
           Certifications
         </h1>
-        <Certifications />
+        <CertificationsComponent />
       </div>
     </>
   );
