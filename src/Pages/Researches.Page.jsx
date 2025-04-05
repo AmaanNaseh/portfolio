@@ -49,6 +49,12 @@ const ResearchesPage = () => {
                   </h3>
                   <p>Date: {research.date}</p>
                   <p>DOI: {research.doi}</p>
+                  <p>
+                    Status:{" "}
+                    <span className="text-red-700 font-semibold">
+                      {research.status}
+                    </span>
+                  </p>
                   <p className="text-justify">
                     <span className="font-bold text-md lg:text-lg mr-8">
                       Abstract:
