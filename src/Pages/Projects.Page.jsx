@@ -34,7 +34,7 @@ const ProjectsPage = () => {
                     <div className="flex flex-row gap-4">
                       <a
                         href={project.deployedLink}
-                        className="hover:border-b-[2px] border-black text-white bg-blue-600 hover:scale-105 hover:z-10 hover:shadow-lg hover:bg-blue-400 p-2 rounded-lg font-bold text-sm md:text-md lg:text-lg"
+                        className="hover:border-b-[2px] border-black text-white bg-blue-600 transition-all duration-100 hover:scale-105 hover:z-10 hover:shadow-lg hover:bg-blue-400 p-2 rounded-lg font-bold text-sm md:text-md lg:text-lg"
                         target="_blank"
                         rel="noreferrer"
                       >
@@ -42,7 +42,7 @@ const ProjectsPage = () => {
                       </a>
                       <a
                         href={project.githubLink}
-                        className="hover:border-b-[2px] border-black text-white bg-black hover:scale-105 hover:z-10 hover:shadow-lg hover:bg-black/75 p-2 rounded-lg font-bold text-sm md:text-md lg:text-lg"
+                        className="hover:border-b-[2px] border-black text-white bg-black transition-all duration-100 hover:scale-105 hover:z-10 hover:shadow-lg hover:bg-black/75 p-2 rounded-lg font-bold text-sm md:text-md lg:text-lg"
                         target="_blank"
                         rel="noreferrer"
                       >

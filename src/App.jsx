@@ -76,7 +76,7 @@ const App = () => {
         onClick={() => {
           window.scrollTo(0, 0);
         }}
-        className={`bg-denim-400 hover:bg-denim-300 text-denim-700 text-2xl rounded-full cursor-pointer transition-transform transform duration-1000 z-50 w-[40px] h-[40px] md:w-[50px] md:h-[50px] fixed bottom-4 left-4 md:left-8 md:bottom-8 ${
+        className={`bg-denim-400 hover:bg-denim-300 hover:scale-105 hover:border-[0.5px] border-denim-800 text-denim-700 text-2xl rounded-full cursor-pointer transition-transform transform duration-1000 z-50 w-[40px] h-[40px] md:w-[50px] md:h-[50px] fixed bottom-4 left-4 md:left-8 md:bottom-8 ${
           isScrollerVisible ? "flex" : "hidden"
         } items-center justify-center`}
       >

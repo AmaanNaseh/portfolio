@@ -37,7 +37,7 @@ const RolesComponent = () => {
           <>
             <div
               key={key}
-              className="min-w-[325px] min-h-[350px] z-10 ring-blue-100 ring-2 rounded-2xl bg-denim-200 shadow-[0_-7px_10px_rgba(70,153,235,0.6),0_7px_10px_rgba(70,156,235,0.6)] hover:bg-denim-400 p-4 flex flex-col items-center justify-center gap-4"
+              className="min-w-[325px] min-h-[350px] md:min-h-[390px] z-10 ring-blue-100 ring-2 rounded-2xl bg-denim-200 shadow-[0_-7px_10px_rgba(70,153,235,0.6),0_7px_10px_rgba(70,156,235,0.6)] hover:bg-denim-400 p-4 flex flex-col items-center justify-center gap-4"
             >
               <div className="w-[150px] bg-black p-[5px]">
                 <img className="w-full" src={role.imgSrc} alt="..." />

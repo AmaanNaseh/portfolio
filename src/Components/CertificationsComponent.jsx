@@ -47,7 +47,7 @@ const CertificationsComponent = () => {
               <p>{certificate.date}</p>
               <a
                 href={certificate.link}
-                className="hover:border-b-[2px] border-black flex items-center justify-center gap-4 bg-denim-600 text-white hover:scale-105 hover:z-10 hover:shadow-lg hover:bg-black/75 px-4 py-2 rounded-lg font-bold text-md md:text-lg lg:text-xl"
+                className="hover:border-b-[2px] border-black flex items-center justify-center gap-4 bg-denim-600 text-white hover:scale-105 hover:z-10 hover:shadow-lg hover:bg-black/75 transition-all duration-300 px-4 py-2 rounded-lg font-bold text-md md:text-lg lg:text-xl"
                 target="_blank"
                 rel="noreferrer"
               >

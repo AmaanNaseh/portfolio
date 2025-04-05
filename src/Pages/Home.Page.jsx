@@ -62,15 +62,17 @@ const HomePage = () => {
         </div>
 
         <div
-          className={`my-12 mt-20 mx-4 md:mx-8 flex flex-col items-center justify-center gap-20`}
+          className={`my-12 mt-20 mx-4 md:mx-8 flex flex-col items-center justify-center gap-20 lg:gap-36`}
         >
           <div
             id="mybgDiv1"
-            className={`flex flex-col md:flex-row items-center justify-between gap-8 md:gap-20 lg:gap-40 transition-all transform duration-[1500ms] ${
-              isVisible1 ? "translate-x-0 " : "translate-x-[-250px]"
+            className={`flex flex-col md:flex-row items-center justify-between gap-8 md:gap-20 lg:gap-40 transition-all transform duration-[2000ms] ${
+              isVisible1
+                ? "translate-x-0 opacity-100"
+                : "translate-x-[-500px] lg:translate-x-[-900px] opacity-0"
             }`}
           >
-            <div className="w-[300px]">
+            <div className="w-[300px] flex flex-col items-center justify-center">
               <img src={WebDesignLogo} alt="laptop" className="w-full" />
             </div>
             <p className="text-justify bg-clip-text text-transparent bg-title-gradient font-semibold max-w-[300px] lg:max-w-[600px]">
@@ -85,11 +87,13 @@ const HomePage = () => {
           </div>
           <div
             id="mybgDiv2"
-            className={`flex flex-col md:flex-row-reverse items-center justify-between gap-8 md:gap-20 lg:gap-40 transition-all transform duration-[1500ms] ${
-              isVisible2 ? "translate-x-0 " : "translate-x-[250px]"
+            className={`flex flex-col md:flex-row-reverse items-center justify-between gap-8 md:gap-20 lg:gap-40 transition-all transform duration-[2000ms] ${
+              isVisible2
+                ? "translate-x-0 opacity-100"
+                : "translate-x-[500px] lg:translate-x-[900px] opacity-0"
             }`}
           >
-            <div className="w-[300px]">
+            <div className="w-[300px] flex flex-col items-center justify-center">
               <img src={MLDevLogo} alt="laptop" className="w-[90%]" />
             </div>
             <p className="text-justify bg-clip-text text-transparent bg-title-gradient font-semibold max-w-[300px] lg:max-w-[600px]">
@@ -103,11 +107,13 @@ const HomePage = () => {
           </div>
           <div
             id="mybgDiv3"
-            className={`flex flex-col md:flex-row items-center justify-between gap-8 md:gap-20 lg:gap-40 transition-all transform duration-[1500ms] ${
-              isVisible3 ? "translate-x-0 " : "translate-x-[-250px]"
+            className={`flex flex-col md:flex-row items-center justify-between gap-8 md:gap-20 lg:gap-40 transition-all transform duration-[2000ms] ${
+              isVisible3
+                ? "translate-x-0 opacity-100"
+                : "translate-x-[-500px] lg:translate-x-[-900px] opacity-0"
             }`}
           >
-            <div className="w-[300px]">
+            <div className="w-[300px] flex flex-col items-center justify-center">
               <img src={PhotographyLogo} alt="laptop" className="w-[75%]" />
             </div>
             <p className="text-justify bg-clip-text text-transparent bg-title-gradient font-semibold max-w-[300px] lg:max-w-[600px]">

@@ -38,7 +38,7 @@ const InternshipsComponent = () => {
           <>
             <div
               key={key}
-              className="min-w-[325px] min-h-[350px] z-10 ring-blue-100 ring-2 rounded-2xl bg-denim-200 shadow-[0_-7px_10px_rgba(70,153,235,0.6),0_7px_10px_rgba(70,156,235,0.6)] hover:bg-denim-400 p-4 flex flex-col items-center justify-center gap-4"
+              className="min-w-[325px] min-h-[350px] md:min-h-[390px] z-10 ring-blue-100 ring-2 rounded-2xl bg-denim-200 shadow-[0_-7px_10px_rgba(70,153,235,0.6),0_7px_10px_rgba(70,156,235,0.6)] hover:bg-denim-400 p-4 flex flex-col items-center justify-center gap-4"
             >
               <div className="w-[150px] bg-black p-[5px]">
                 <img className="w-full" src={internship.imgSrc} alt="..." />
@@ -50,7 +50,7 @@ const InternshipsComponent = () => {
               <p>{internship.duration}</p>
               <a
                 href={internship.link}
-                className="hover:border-b-[2px] border-black flex items-center justify-center gap-4 bg-denim-600 text-white hover:scale-105 hover:z-10 hover:shadow-lg hover:bg-black/75 px-4 py-2 rounded-lg font-bold text-md md:text-lg lg:text-xl"
+                className="hover:border-b-[2px] border-black flex items-center justify-center gap-4 bg-denim-600 text-white hover:scale-105 hover:z-10 hover:shadow-lg hover:bg-black/75 transition-all duration-300 px-4 py-2 rounded-lg font-bold text-md md:text-lg lg:text-xl"
                 target="_blank"
                 rel="noreferrer"
               >

@@ -47,8 +47,8 @@ const ResearchesPage = () => {
                   <h3 className="font-bold md:text-lg lg:text-xl italic">
                     {research.id}. {research.title}
                   </h3>
-                  <p>Date: {research.date}</p>
-                  <p>DOI: {research.doi}</p>
+                  {/* <p>Date: {research.date}</p>
+                  <p>DOI: {research.doi}</p> */}
                   <p>
                     Status:{" "}
                     <span className="text-red-700 font-semibold">

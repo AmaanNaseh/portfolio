@@ -27,7 +27,7 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
         }`}
       >
         <Link to={"/"}>
-          <h1 className="font-bold italic md:text-lg lg:text-2xl hover:scale-105 cursor-pointer">
+          <h1 className="font-bold italic md:text-lg lg:text-2xl transition-all duration-200 hover:scale-105 cursor-pointer">
             &lt; Amaan Naseh /&gt;
           </h1>
         </Link>

@@ -63,7 +63,7 @@ const SelfSection = () => {
             HackJMI25
             <FaTrophy className="text-[#FFD700]" />
           </a>
-          ,
+
           <a
             target="_blank"
             rel="noreferrer"
