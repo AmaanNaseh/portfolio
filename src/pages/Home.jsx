@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link as ScrollLink } from "react-scroll";
 
 // User Data
@@ -13,7 +13,13 @@ import {
 } from "./UserData";
 
 // Icons
-import { FaStarOfLife, FaVideo, FaCode, FaLinkedinIn } from "react-icons/fa";
+import {
+  FaStarOfLife,
+  FaVideo,
+  FaCode,
+  FaLinkedinIn,
+  FaArrowUp,
+} from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FiFacebook, FiGithub } from "react-icons/fi";
 import { GrInstagram } from "react-icons/gr";
@@ -37,19 +43,31 @@ import cppLogo from "../assets/skills/cpp.png";
 
 const PTemplate7 = () => {
   const [isSideNavVisible, setIsSideNavVisible] = useState(false);
+  const [isMoveToTop, setIsMoveToTop] = useState(false);
+
+  useEffect(() => {
+    const handleScrollYValue = () => {
+      setIsMoveToTop(window.scrollY > 750 ? true : false);
+    };
+
+    window.addEventListener("scroll", handleScrollYValue);
+
+    return () => window.removeEventListener("scroll", handleScrollYValue);
+  }, []);
 
   return (
     <>
       <div className="overflow-hidden">
         <nav className="z-20 flex items-center justify-between px-4 lg:px-20 pt-12 mb-10">
-          <h1
+          <div
             onClick={() => {
               window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
             }}
-            className="font-bold cursor-pointer hover:scale-110 transition-all duration-200"
+            className="flex items-end justify-center gap-2 text-xl md:text-2xl font-bold italic cursor-pointer hover:scale-110 transition-all duration-200"
           >
-            {aboutSection.aboutName}
-          </h1>
+            <img src="/logo.png" alt="logo" className="w-[50px] h-[50px]" />
+            Naseh
+          </div>
 
           <ul className="hidden lg:inline-flex items-center gap-12 text-[#9c9da1] font-semibold text-sm">
             <ScrollLink
@@ -631,7 +649,7 @@ const PTemplate7 = () => {
         </div>
 
         {/* Footer */}
-        <footer className="w-full mt-20 bg-black flex flex-col items-start justify-center gap-8 py-12">
+        <footer className="w-full z-20 mt-20 bg-black flex flex-col items-start justify-center gap-8 py-12">
           <div className="mx-auto">
             <p className="text-white text-3xl font-bold tracking-wider mb-8 text-center px-4">
               Let's <span className="text-[#3B38A0]">connect</span> here
@@ -826,6 +844,17 @@ const PTemplate7 = () => {
             </ul>
           </div>
         </footer>
+      </div>
+
+      <div
+        onClick={() => {
+          window.scroll({ top: 0, left: 0, behavior: "smooth" });
+        }}
+        className={`w-[50px] h-[50px] z-10 rounded-full border-[4px] border-[#3B38A0] cursor-pointer fixed left-4 top-10 hover:scale-110 transition-all duration-200 ${
+          isMoveToTop ? "flex items-center justify-center" : "hidden"
+        }`}
+      >
+        <FaArrowUp className="text-3xl text-[#3B38A0] font-bold" />
       </div>
     </>
   );
