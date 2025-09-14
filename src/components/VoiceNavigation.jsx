@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import SpeechRecognition, {
   useSpeechRecognition,
 } from "react-speech-recognition";
@@ -29,11 +29,13 @@ const VoiceNavigation = () => {
   const { transcript, listening, resetTranscript } = useSpeechRecognition();
   const [hovered, setHovered] = useState(false);
   const [lastCommand, setLastCommand] = useState("");
+  const stopTimeoutRef = useRef(null);
 
   useEffect(() => {
     const lower = transcript.toLowerCase().trim();
     if (commands.includes(lower) && lower !== lastCommand) {
       setLastCommand(lower);
+      clearTimeout(stopTimeoutRef.current); // Clear auto-stop if command recognized
       handleCommand(lower);
     }
   }, [transcript]);
@@ -42,7 +44,7 @@ const VoiceNavigation = () => {
     const sectionId = commandToSectionMap[command];
     if (!sectionId) return;
 
-    handleStopListening(); // Stop listening immediately to avoid overlap
+    handleStopListening(); // Stop listening immediately
 
     const message = `Scrolling to ${command}`;
     const utterance = new SpeechSynthesisUtterance(message);
@@ -68,11 +70,19 @@ const VoiceNavigation = () => {
     setLastCommand("");
 
     try {
-      // Request mic permission explicitly
+      // Request mic permission
       await navigator.mediaDevices.getUserMedia({ audio: true });
 
-      // Start listening only after permission is granted
-      SpeechRecognition.startListening({ continuous: true });
+      // Start listening for a short session (non-continuous)
+      SpeechRecognition.startListening({
+        continuous: false,
+        language: "en-US",
+      });
+
+      // Auto-stop mic after 3 seconds if nothing said
+      stopTimeoutRef.current = setTimeout(() => {
+        handleStopListening();
+      }, 3000);
     } catch (err) {
       console.error("Microphone access denied or blocked:", err);
       alert("Please allow microphone access to use voice navigation.");
@@ -81,6 +91,7 @@ const VoiceNavigation = () => {
 
   const handleStopListening = () => {
     SpeechRecognition.stopListening();
+    clearTimeout(stopTimeoutRef.current);
   };
 
   return (
