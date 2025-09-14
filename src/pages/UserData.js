@@ -109,8 +109,25 @@ export const internshipSection = [
 
 export const skillSection = [
   {
-    skillTitle: "SKILL TITLE",
-    skillDescription: "SKILL DESCRIPTION",
+    skillTitle: "Web Development",
+    skillDescription: "HTML, CSS, Js, MERN Stack, Tailwind CSS",
+  },
+
+  {
+    skillTitle: "DevOps",
+    skillDescription:
+      "GCP, Vercel, Render, Netlify, Hostinger, Namecheap, TechDomains",
+  },
+
+  {
+    skillTitle: "Machine Learning",
+    skillDescription:
+      "Python, Supervised machine learning, CNN, Data Analytics, Botpress, Flask",
+  },
+
+  {
+    skillTitle: "DSA",
+    skillDescription: "C++ implementation",
   },
 ];
 

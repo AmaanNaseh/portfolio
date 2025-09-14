@@ -274,7 +274,10 @@ const PTemplate7 = () => {
         </nav>
 
         {/* Hero Section */}
-        <div className="relative flex flex-col items-center justify-center mb-12">
+        <div
+          name="aboutSection"
+          className="relative flex flex-col items-center justify-center mb-12"
+        >
           <div className="flex flex-col items-center justify-center mx-auto">
             <div className="w-[300px] h-[300px] md:w-[450px] md:h-[450px] drop-shadow-[0_0_20px_#3B38A0]">
               <img
