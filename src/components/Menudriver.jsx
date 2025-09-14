@@ -34,7 +34,7 @@ const Menudriver = () => {
         onClick={() => {
           setIsMenuDriver(!isMenuDriver);
         }}
-        className="w-[50px] h-[50px] z-10 rounded-full border-[4px] border-black cursor-pointer fixed left-4 top-48 hover:scale-110 transition-all duration-200 flex items-center justify-center"
+        className="w-[50px] h-[50px] z-20 rounded-full border-[4px] border-black cursor-pointer fixed left-4 top-48 hover:scale-110 transition-all duration-200 flex items-center justify-center"
       >
         <MdOutlineTerminal className="text-3xl font-bold" />
       </div>

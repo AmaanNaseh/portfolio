@@ -95,7 +95,7 @@ const VoiceNavigation = () => {
   };
 
   return (
-    <div className="fixed top-28 left-4 z-10">
+    <div className="fixed top-28 left-4 z-20">
       <div
         className="relative"
         onMouseEnter={() => setHovered(true)}

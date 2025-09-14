@@ -63,7 +63,7 @@ const PTemplate7 = () => {
     <>
       {/* Main Homepage */}
       <div className="overflow-hidden">
-        <nav className="z-20 flex items-center justify-between px-4 lg:px-20 pt-12 mb-10">
+        <nav className="z-50 flex items-center justify-between px-4 lg:px-20 pt-12 mb-10">
           <div
             onClick={() => {
               window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
@@ -168,7 +168,7 @@ const PTemplate7 = () => {
           )}
 
           {isSideNavVisible ? (
-            <div className="fixed top-0 bottom-0 left-0 lg:hidden z-20 w-full min-h-[100vh] bg-[#f4f6fa] p-8">
+            <div className="fixed top-0 bottom-0 left-0 lg:hidden z-50 w-full min-h-[100vh] bg-[#f4f6fa] p-8">
               <RxCross1
                 className="text-3xl lg:hidden cursor-pointer hover:scale-110 transition-all duration-200 absolute right-4 top-12"
                 onClick={() => {
@@ -657,7 +657,7 @@ const PTemplate7 = () => {
         </div>
 
         {/* Footer */}
-        <footer className="w-full z-20 mt-20 bg-black flex flex-col items-start justify-center gap-8 py-12">
+        <footer className="w-full z-50 mt-20 bg-black flex flex-col items-start justify-center gap-8 py-12">
           <div className="mx-auto">
             <p className="text-white text-3xl font-bold tracking-wider mb-8 text-center px-4">
               Let's <span className="text-[#3B38A0]">connect</span> here
@@ -859,7 +859,7 @@ const PTemplate7 = () => {
         onClick={() => {
           window.scroll({ top: 0, left: 0, behavior: "smooth" });
         }}
-        className={`w-[50px] h-[50px] z-10 rounded-full border-[4px] border-[#3B38A0] cursor-pointer fixed left-4 top-8 hover:scale-110 transition-all duration-200 ${
+        className={`w-[50px] h-[50px] z-20 rounded-full border-[4px] border-[#3B38A0] cursor-pointer fixed left-4 top-8 hover:scale-110 transition-all duration-200 ${
           isMoveToTop ? "flex items-center justify-center" : "hidden"
         }`}
       >
