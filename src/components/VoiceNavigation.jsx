@@ -103,7 +103,7 @@ const VoiceNavigation = () => {
       >
         {/* Mic Button */}
         <button
-          className="w-[50px] h-[50px] z-10 rounded-full border-[4px] border-[#3B38A0] cursor-pointer flex items-center justify-center hover:scale-110 transition-all duration-200"
+          className="w-[50px] h-[50px] z-10 rounded-full border-[4px] border-black cursor-pointer flex items-center justify-center hover:scale-110 transition-all duration-200"
           onClick={handleStartListening}
         >
           {listening ? (
@@ -116,7 +116,7 @@ const VoiceNavigation = () => {
               title="Click to stop listening"
             ></div>
           ) : (
-            <FaMicrophone className="text-3xl text-[#3B38A0]" />
+            <FaMicrophone className="text-3xl text-black" />
           )}
         </button>
 
@@ -129,7 +129,7 @@ const VoiceNavigation = () => {
               </div>
             ) : (
               <div>
-                <p className="font-bold text-center mb-2">Commands</p>
+                <p className="font-bold text-center mb-2">Voice Commands</p>
                 <ul className="flex flex-col gap-2 max-w-[200px]">
                   {commands.map((cmd) => (
                     <li key={cmd} className="capitalize">

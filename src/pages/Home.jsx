@@ -41,6 +41,10 @@ import pythonLogo from "../assets/skills/python.png";
 
 import cppLogo from "../assets/skills/cpp.png";
 
+// components
+import VoiceNavigation from "../components/VoiceNavigation";
+import Menudriver from "../components/Menudriver";
+
 const PTemplate7 = () => {
   const [isSideNavVisible, setIsSideNavVisible] = useState(false);
   const [isMoveToTop, setIsMoveToTop] = useState(false);
@@ -57,6 +61,7 @@ const PTemplate7 = () => {
 
   return (
     <>
+      {/* Main Homepage */}
       <div className="overflow-hidden">
         <nav className="z-20 flex items-center justify-between px-4 lg:px-20 pt-12 mb-10">
           <div
@@ -849,16 +854,23 @@ const PTemplate7 = () => {
         </footer>
       </div>
 
+      {/* Scroll to Top */}
       <div
         onClick={() => {
           window.scroll({ top: 0, left: 0, behavior: "smooth" });
         }}
-        className={`w-[50px] h-[50px] z-10 rounded-full border-[4px] border-[#3B38A0] cursor-pointer fixed left-4 top-10 hover:scale-110 transition-all duration-200 ${
+        className={`w-[50px] h-[50px] z-10 rounded-full border-[4px] border-[#3B38A0] cursor-pointer fixed left-4 top-8 hover:scale-110 transition-all duration-200 ${
           isMoveToTop ? "flex items-center justify-center" : "hidden"
         }`}
       >
-        <FaArrowUp className="text-3xl text-[#3B38A0] font-bold" />
+        <FaArrowUp className="text-3xl font-bold text-[#3B38A0]" />
       </div>
+
+      {/* Menu Driver */}
+      <Menudriver />
+
+      {/* Voice Navigation */}
+      <VoiceNavigation />
     </>
   );
 };
