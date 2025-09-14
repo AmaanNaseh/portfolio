@@ -56,20 +56,27 @@ const VoiceNavigation = () => {
         offset: -100,
       });
 
-      // Reset transcript and lastCommand after scroll and speech
       resetTranscript();
       setLastCommand("");
-
-      // Do NOT restart listening here — stop fully after command
     };
 
     window.speechSynthesis.speak(utterance);
   };
 
-  const handleStartListening = () => {
+  const handleStartListening = async () => {
     resetTranscript();
     setLastCommand("");
-    SpeechRecognition.startListening({ continuous: true });
+
+    try {
+      // Request mic permission explicitly
+      await navigator.mediaDevices.getUserMedia({ audio: true });
+
+      // Start listening only after permission is granted
+      SpeechRecognition.startListening({ continuous: true });
+    } catch (err) {
+      console.error("Microphone access denied or blocked:", err);
+      alert("Please allow microphone access to use voice navigation.");
+    }
   };
 
   const handleStopListening = () => {
