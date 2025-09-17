@@ -26,6 +26,9 @@ import { GrInstagram } from "react-icons/gr";
 import { RxCross1 } from "react-icons/rx";
 import { IoMdMenu, IoIosLink } from "react-icons/io";
 
+// Resume
+import resume from "../assets/resume.pdf";
+
 // Skill Images
 import htmlcssjsLogo from "../assets/skills/htmlcssjs.png";
 import mernLogo from "../assets/skills/mern.png";
@@ -75,6 +78,17 @@ const PTemplate7 = () => {
           </div>
 
           <ul className="hidden lg:inline-flex items-center gap-12 text-[#9c9da1] font-semibold text-sm">
+            <ScrollLink
+              to="skillSection"
+              smooth={true}
+              offset={-100}
+              duration={500}
+            >
+              <li className="cursor-pointer hover:scale-110 transition-all duration-200">
+                Skills
+              </li>
+            </ScrollLink>
+
             <ScrollLink
               to="projectSection"
               smooth={true}
@@ -176,6 +190,22 @@ const PTemplate7 = () => {
                 }}
               />
               <ul className="flex flex-col gap-8 pt-16">
+                <ScrollLink
+                  to="skillSection"
+                  smooth={true}
+                  offset={-100}
+                  duration={500}
+                >
+                  <li
+                    onClick={() => {
+                      setIsSideNavVisible(false);
+                    }}
+                    className="cursor-pointer hover:scale-110 transition-all duration-200"
+                  >
+                    Skills
+                  </li>
+                </ScrollLink>
+
                 <ScrollLink
                   to="projectSection"
                   smooth={true}
@@ -346,49 +376,78 @@ const PTemplate7 = () => {
           </div>
         </div>
 
-        {/* Skills Small Screens */}
-        <div className="lg:hidden flex flex-col items-center justify-center gap-4">
+        <div className="my-32 px-10">
+          <h1 className="text-2xl lg:text-4xl font-bold mb-8 text-center">
+            About <span className="text-[#3B38A0]">MYSELF</span>
+          </h1>
+
+          <div className="flex flex-col md:flex-row items-center justify-center gap-20">
+            <div className="lg:max-w-[60%] flex flex-col items-center justify-center gap-10">
+              <p className="text-justify text-sm lg:text-md">
+                {aboutSection.aboutDescription}
+              </p>
+              <a
+                href={resume}
+                target="_blank"
+                rel="noreferrer"
+                download
+                className="px-4 py-2 md:px-6 md:py-3 md:text-md lg:text-lg font-bold bg-[#3B38A0] text-[#FFFFF0] shadow-[8px_8px_0_0_rgba(0,0,0,1)] hover:scale-110 transition-all duration-200"
+              >
+                Download Resume
+              </a>
+            </div>
+            <div className="w-[300px] hidden lg:block">
+              <img src={aboutSection.aboutImage} alt="" className="w-full" />
+            </div>
+          </div>
+        </div>
+
+        {/* Skills */}
+        <div
+          name="skillSection"
+          className="flex flex-col items-center justify-center gap-4 my-32 px-10"
+        >
           <h1 className="text-2xl lg:text-4xl font-bold mb-8 text-center">
             My <span className="text-[#3B38A0]">SKILLS</span>
           </h1>
-          <div className="flex flex-wrap items-center justify-center gap-9">
-            <div className="w-[100px] animate-bounce">
+          <div className="flex flex-wrap items-center justify-center gap-5 md:gap-10 lg:gap-20 lg:px-40">
+            <div className="w-[100px] lg:w-[150px] animate-bounce">
               <img src={htmlcssjsLogo} alt="logo" />
             </div>
 
-            <div className="w-[100px] animate-bounce">
+            <div className="w-[100px] lg:w-[150px] animate-bounce">
               <img src={mernLogo} alt="logo" />
             </div>
 
-            <div className="w-[40px] animate-bounce">
+            <div className="w-[40px] lg:w-[60px] animate-bounce">
               <img src={tailwindcssLogo} alt="logo" />
             </div>
 
-            <div className="w-[75px] animate-bounce">
+            <div className="w-[75px] lg:w-[125px] animate-bounce">
               <img src={devopsLogo} alt="logo" />
             </div>
 
-            <div className="w-[75px] animate-bounce">
+            <div className="w-[75px] lg:w-[150px] animate-bounce">
               <img src={gcpLogo} alt="logo" />
             </div>
 
-            <div className="w-[40px] animate-bounce">
+            <div className="w-[40px] lg:w-[60px] animate-bounce">
               <img src={cppLogo} alt="logo" />
             </div>
 
-            <div className="w-[40px] animate-bounce">
+            <div className="w-[40px] lg:w-[60px] animate-bounce">
               <img src={pythonLogo} alt="logo" />
             </div>
 
-            <div className="w-[75px] animate-bounce">
+            <div className="w-[50px] lg:w-[125px] animate-bounce">
               <img src={mlLogo} alt="logo" />
             </div>
 
-            <div className="w-[100px] animate-bounce">
+            <div className="w-[100px] lg:w-[150px] animate-bounce">
               <img src={botpressLogo} alt="logo" />
             </div>
 
-            <div className="w-[75px] animate-bounce">
+            <div className="w-[75px] lg:w-[125px] animate-bounce">
               <img src={flaskLogo} alt="logo" />
             </div>
           </div>
@@ -795,6 +854,17 @@ const PTemplate7 = () => {
               {aboutSection.aboutName} / {new Date().getFullYear()}
             </p>
             <ul className="inline-flex flex-wrap items-center text-sm gap-4 lg:gap-12 text-[#9c9da1]">
+              <ScrollLink
+                to="skillSection"
+                smooth={true}
+                offset={-100}
+                duration={500}
+              >
+                <li className="cursor-pointer hover:scale-110 transition-all duration-200">
+                  Skills
+                </li>
+              </ScrollLink>
+
               <ScrollLink
                 to="projectSection"
                 smooth={true}

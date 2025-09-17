@@ -40,7 +40,7 @@ export const projectSection = [
     projectDomain: "MERN, Tailwind CSS",
     projectDescription:
       "A No-Code website and resume development platform which utilizes a data-centric approach to develop portfolio and resume on common data within few minutes",
-    projectVideo: "https://www.youtube.com/E48133e9ffc", // Must write NA in project video link if it do not exists
+    projectVideo: "https://youtu.be/E48133e9ffc", // Must write NA in project video link if it do not exists
     projectCode: "NA", // Must write NA in project code link if it do not exists
     projectLink: "https://www.presyou.tech", // Must write NA in project link if it do not exists
   },

@@ -16,7 +16,7 @@ const commands = [
 ];
 
 const commandToSectionMap = {
-  skills: "aboutSection",
+  skills: "skillSection",
   projects: "projectSection",
   experience: "internshipSection",
   certifications: "certificationSection",
