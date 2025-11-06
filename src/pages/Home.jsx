@@ -9,6 +9,7 @@ import {
   extraSection,
   internshipSection,
   projectSection,
+  freelanceSection,
   // skillSection,
 } from "./UserData";
 
@@ -464,7 +465,7 @@ const PTemplate7 = () => {
               return (
                 <div
                   key={index}
-                  className="min-w-[300px] max-w-[350px] min-h-[250px] bg-[#ffffff] text-black z-10 shadow-[1px_1px_10px_0_rgba(0,0,0,0.2)]"
+                  className="min-w-[300px] max-w-[350px] md:min-w-[400px] md:max-w-[450px] min-h-[250px] bg-[#ffffff] text-black z-10 shadow-[1px_1px_10px_0_rgba(0,0,0,0.2)]"
                 >
                   <div
                     className={`w-full text-center p-4 text-white ${
@@ -477,6 +478,73 @@ const PTemplate7 = () => {
                         : "bg-[#D3D3D3]"
                     }`}
                   >
+                    <p className="font-bold">{item.projectName}</p>
+                  </div>
+                  <div className="mx-auto flex flex-col items-center justify-center gap-5 my-7">
+                    <p className="text-sm font-semibold">
+                      {item.projectDomain}
+                    </p>
+                    <p className="text-xs max-w-[275px] text-justify">
+                      {item.projectDescription}
+                    </p>
+
+                    <div className="flex flex-wrap items-center justify-center gap-4">
+                      <a
+                        href={
+                          item.projectVideo !== "NA" ? item.projectVideo : ""
+                        }
+                        target="_blank"
+                        rel="noreferrer"
+                        className={`px-4 py-2 text-sm font-bold bg-[#3B38A0] text-[#FFFFF0] shadow-[4px_4px_0_0_rgba(0,0,0,1)] cursor-pointer hover:scale-110 transition-all duration-200 ${
+                          item.projectVideo !== "NA" ? "" : "hidden"
+                        }`}
+                      >
+                        <FaVideo className="" />
+                      </a>
+
+                      <a
+                        href={item.projectCode !== "NA" ? item.projectCode : ""}
+                        target="_blank"
+                        rel="noreferrer"
+                        className={`px-4 py-2 text-sm font-bold bg-[#3B38A0] text-[#FFFFF0] shadow-[4px_4px_0_0_rgba(0,0,0,1)] cursor-pointer hover:scale-110 transition-all duration-200 ${
+                          item.projectCode !== "NA" ? "" : "hidden"
+                        }`}
+                      >
+                        <FaCode />
+                      </a>
+
+                      <a
+                        href={item.projectLink !== "NA" ? item.projectLink : ""}
+                        target="_blank"
+                        rel="noreferrer"
+                        className={`px-4 py-2 text-sm font-bold bg-[#3B38A0] text-[#FFFFF0] shadow-[4px_4px_0_0_rgba(0,0,0,1)] cursor-pointer hover:scale-110 transition-all duration-200 ${
+                          item.projectLink !== "NA" ? "" : "hidden"
+                        }`}
+                      >
+                        <IoIosLink />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+
+        {/* Freelance projects */}
+        <div className="my-20 px-10">
+          <h1 className="text-2xl lg:text-4xl font-bold mb-8 text-center">
+            Freelance <span className="text-[#3B38A0]">WORK</span>
+          </h1>
+
+          <div className="flex flex-col items-center justify-center md:flex-row md:flex-wrap gap-16">
+            {freelanceSection.map((item, index) => {
+              return (
+                <div
+                  key={index}
+                  className="min-w-[300px] max-w-[350px] md:min-w-[400px] md:max-w-[450px] min-h-[250px] bg-[#ffffff] text-black z-10 shadow-[1px_1px_10px_0_rgba(0,0,0,0.2)]"
+                >
+                  <div className="w-full text-center p-4 bg-black text-white">
                     <p className="font-bold">{item.projectName}</p>
                   </div>
                   <div className="mx-auto flex flex-col items-center justify-center gap-5 my-7">
@@ -544,7 +612,7 @@ const PTemplate7 = () => {
               return (
                 <div
                   key={index}
-                  className="min-w-[300px] max-w-[350px] md:max-w-[450px] min-h-[250px] bg-[#ffffff] text-black z-10 shadow-[1px_1px_10px_0_rgba(0,0,0,0.2)]"
+                  className="min-w-[300px] max-w-[350px] md:min-w-[400px] md:max-w-[450px] min-h-[250px] bg-[#ffffff] text-black z-10 shadow-[1px_1px_10px_0_rgba(0,0,0,0.2)]"
                 >
                   <div
                     className={`w-full text-center p-4 bg-[#3B38A0] text-white`}
@@ -595,7 +663,7 @@ const PTemplate7 = () => {
               return (
                 <div
                   key={index}
-                  className="min-w-[300px] max-w-[350px] md:max-w-[450px] min-h-[250px] bg-[#ffffff] text-black z-10 shadow-[1px_1px_10px_0_rgba(0,0,0,0.2)]"
+                  className="min-w-[300px] max-w-[350px] md:min-w-[400px] md:max-w-[450px] min-h-[250px] bg-[#ffffff] text-black z-10 shadow-[1px_1px_10px_0_rgba(0,0,0,0.2)]"
                 >
                   <div
                     className={`w-full text-center p-4 bg-[#3B38A0] text-white`}
@@ -649,7 +717,7 @@ const PTemplate7 = () => {
               return (
                 <div
                   key={index}
-                  className="min-w-[300px] max-w-[350px] md:max-w-[450px] min-h-[250px] bg-[#ffffff] text-black z-10 shadow-[1px_1px_10px_0_rgba(0,0,0,0.2)]"
+                  className="min-w-[300px] max-w-[350px] md:min-w-[400px] md:max-w-[450px] min-h-[250px] bg-[#ffffff] text-black z-10 shadow-[1px_1px_10px_0_rgba(0,0,0,0.2)]"
                 >
                   <div
                     className={`w-full text-center p-4 bg-[#3B38A0] text-white`}

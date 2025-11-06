@@ -66,6 +66,88 @@ export const projectSection = [
   },
 ];
 
+export const freelanceSection = [
+  {
+    projectName: "Careconnect",
+    projectDomain: "Python, NLP, ML, Flask, React.js, Tailwind CSS",
+    projectDescription:
+      "A NLP based disease recognition based on input symptoms by user. Diabetes analysis based on quiz and recommendations on the predicted output",
+    projectVideo: "NA", // Must write NA in project video link if it do not exists
+    projectCode: "NA", // Must write NA in project code link if it do not exists
+    projectLink: "NA", // Must write NA in project link if it do not exists
+  },
+
+  {
+    projectName: "Connectify",
+    projectDomain: "HTML, CSS, JavaScript, Node.js, Express.js, MongoDB",
+    projectDescription:
+      "A social media platform for users to connect with each other",
+    projectVideo: "NA", // Must write NA in project video link if it do not exists
+    projectCode: "NA", // Must write NA in project code link if it do not exists
+    projectLink: "NA", // Must write NA in project link if it do not exists
+  },
+
+  {
+    projectName: "SocialSphere",
+    projectDomain: "HTML, CSS, JavaScript, Node.js, Express.js, MongoDB",
+    projectDescription:
+      "A social media platform for users to connect with each other",
+    projectVideo: "NA", // Must write NA in project video link if it do not exists
+    projectCode: "NA", // Must write NA in project code link if it do not exists
+    projectLink: "NA", // Must write NA in project link if it do not exists
+  },
+
+  {
+    projectName: "Cybershield",
+    projectDomain: "React.Js, ML, Flask",
+    projectDescription:
+      "A cyber security and ML related website to predict cyber threat possible on an input url and suggest corrections based on that",
+    projectVideo: "NA", // Must write NA in project video link if it do not exists
+    projectCode: "NA", // Must write NA in project code link if it do not exists
+    projectLink: "NA", // Must write NA in project link if it do not exists
+  },
+
+  {
+    projectName: "Inventory Management System",
+    projectDomain: "MERN Stack",
+    projectDescription:
+      "A full stack website for handling inventory and stocks for e commerce websites",
+    projectVideo: "NA", // Must write NA in project video link if it do not exists
+    projectCode: "NA", // Must write NA in project code link if it do not exists
+    projectLink: "NA", // Must write NA in project link if it do not exists
+  },
+
+  {
+    projectName: "Foodhub",
+    projectDomain: "MERN Stack, ML (Unsupervised: Association), Flask",
+    projectDescription:
+      "A full stack website for food e commerce industry with ML integrated for item suggestion",
+    projectVideo: "NA", // Must write NA in project video link if it do not exists
+    projectCode: "NA", // Must write NA in project code link if it do not exists
+    projectLink: "NA", // Must write NA in project link if it do not exists
+  },
+
+  {
+    projectName: "Car License Plate Recognition",
+    projectDomain: "React.js, MongoDB, Tailwind CSS, ML, Flask",
+    projectDescription:
+      "A full stack website for detecting characters in number plate of a car using OCR",
+    projectVideo: "NA", // Must write NA in project video link if it do not exists
+    projectCode: "NA", // Must write NA in project code link if it do not exists
+    projectLink: "NA", // Must write NA in project link if it do not exists
+  },
+
+  {
+    projectName: "Traffic Management System",
+    projectDomain: "React.js, MongoDB, Tailwind CSS, ML, Flask, OpenCV",
+    projectDescription:
+      "A full stack website for detecting traffic on road through camera in 4 directions (North South East West) and monitors traffic situation",
+    projectVideo: "NA", // Must write NA in project video link if it do not exists
+    projectCode: "NA", // Must write NA in project code link if it do not exists
+    projectLink: "NA", // Must write NA in project link if it do not exists
+  },
+];
+
 export const internshipSection = [
   {
     internshipInstitute: "DRDO",
