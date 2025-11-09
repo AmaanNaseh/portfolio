@@ -6,11 +6,11 @@ I have developed my portfolio website using my another project - [PresYou](https
 
 ## Techstack
 
-| Domain     | Technology               |
-| ---------- | ------------------------ |
-| Frontend   | React.js, Tailwind CSS   |
-| Deployment | Vercel, Namecheap domain |
-| SEO        | Google Search Console    |
+| Domain         | Technology               |
+| -------------- | ------------------------ |
+| **Frontend**   | React.js, Tailwind CSS   |
+| **Deployment** | Vercel, Namecheap domain |
+| **SEO**        | Google Search Console    |
 
 ---
 
@@ -23,9 +23,9 @@ I have developed my portfolio website using my another project - [PresYou](https
 ## Features
 
 - General showcase of different sections of my portfolio
-- Terminal Mode for terminal-like preview
-- Voice based navigation to different sections
-- Dedicated multi-lingual virtual assistant for knowing about my profile
+- **Terminal Mode** for terminal-like preview
+- **Voice** based **navigation** to different sections
+- Dedicated multi-lingual **virtual assistant** for knowing about my profile
 
 ---
 
