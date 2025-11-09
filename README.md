@@ -6,9 +6,11 @@ I have developed my portfolio website using my another project - [PresYou](https
 
 ## Techstack
 
-- **Frontend**: React.js, Tailwind CSS
-- **Deployment**: Vercel, Namecheap domain
-- **SEO**: Google Search Console
+| Domain     | Technology               |
+| ---------- | ------------------------ |
+| Frontend   | React.js, Tailwind CSS   |
+| Deployment | Vercel, Namecheap domain |
+| SEO        | Google Search Console    |
 
 ---
 
@@ -24,3 +26,12 @@ I have developed my portfolio website using my another project - [PresYou](https
 - Terminal Mode for terminal-like preview
 - Voice based navigation to different sections
 - Dedicated multi-lingual virtual assistant for knowing about my profile
+
+---
+
+## License
+
+This project is licensed for **public display only**.  
+You may view the code in this repository as part of my portfolio, but **you are not permitted to copy, modify, distribute, or use** any part of it for any purpose.
+
+See the [LICENSE.md](./LICENSE.md) file for full details.
