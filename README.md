@@ -17,3 +17,10 @@ I have developed my portfolio website using my another project - [PresYou](https
 [www.naseh.me](https://www.naseh.me) or [amaan-naseh.vercel.app](https://amaan-naseh.vercel.app)
 
 ---
+
+## Features
+
+- General showcase of different sections of my portfolio
+- Terminal Mode for terminal-like preview
+- Voice based navigation to different sections
+- Dedicated multi-lingual virtual assistant for knowing about my profile
