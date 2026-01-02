@@ -467,17 +467,7 @@ const PTemplate7 = () => {
                   key={index}
                   className="min-w-[300px] max-w-[350px] md:min-w-[400px] md:max-w-[450px] min-h-[250px] bg-[#ffffff] text-black z-10 shadow-[1px_1px_10px_0_rgba(0,0,0,0.2)]"
                 >
-                  <div
-                    className={`w-full text-center p-4 text-white ${
-                      index === 0
-                        ? "bg-[#7A52E7]"
-                        : index == 1
-                        ? "bg-[#1674C9]"
-                        : index == 2
-                        ? "bg-[#15803D]"
-                        : "bg-[#D3D3D3]"
-                    }`}
-                  >
+                  <div className="w-full text-center p-4 bg-[#3B38A0] text-white">
                     <p className="font-bold">{item.projectName}</p>
                   </div>
                   <div className="mx-auto flex flex-col items-center justify-center gap-5 my-7">
@@ -544,7 +534,7 @@ const PTemplate7 = () => {
                   key={index}
                   className="min-w-[300px] max-w-[350px] md:min-w-[400px] md:max-w-[450px] min-h-[250px] bg-[#ffffff] text-black z-10 shadow-[1px_1px_10px_0_rgba(0,0,0,0.2)]"
                 >
-                  <div className="w-full text-center p-4 bg-black text-white">
+                  <div className="w-full text-center p-4 bg-[#3B38A0] text-white">
                     <p className="font-bold">{item.projectName}</p>
                   </div>
                   <div className="mx-auto flex flex-col items-center justify-center gap-5 my-7">

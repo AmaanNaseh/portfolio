@@ -36,6 +36,16 @@ export const certificationSection = [
 
 export const projectSection = [
   {
+    projectName: "Kisan Kranti",
+    projectDomain: "MERN, Tailwind CSS, ML, IOT",
+    projectDescription:
+      "A digital platform for Indian farmers for crop selection, growth, treatment and marketing. Core feature is crop disease prediction & report generation by Machine Learning",
+    projectVideo: "https://youtu.be/LVCE_83GQlY", // Must write NA in project video link if it do not exists
+    projectCode: "https://github.com/AmaanNaseh/kisan-kranti", // Must write NA in project code link if it do not exists
+    projectLink: "https://kisan-kranti.vercel.app", // Must write NA in project link if it do not exists
+  },
+
+  {
     projectName: "Presyou",
     projectDomain: "MERN, Tailwind CSS",
     projectDescription:
@@ -56,13 +66,23 @@ export const projectSection = [
   },
 
   {
-    projectName: "Kisan Kranti",
-    projectDomain: "MERN, Tailwind CSS, ML, IOT",
+    projectName: "Automatic Welding of Industrial Robot",
+    projectDomain: "Robotics, React.js, Tailwind CSS",
     projectDescription:
-      "A digital platform for Indian farmers for crop selection, growth, treatment and marketing. Core feature is crop disease prediction & report generation by Machine Learning",
-    projectVideo: "https://youtu.be/LVCE_83GQlY", // Must write NA in project video link if it do not exists
-    projectCode: "https://github.com/AmaanNaseh/kisan-kranti", // Must write NA in project code link if it do not exists
-    projectLink: "https://kisan-kranti.vercel.app", // Must write NA in project link if it do not exists
+      "I am currently researching about implementation of machine learning in TIG welding.",
+    projectVideo: "NA", // Must write NA in project video link if it do not exists
+    projectCode: "NA", // Must write NA in project code link if it do not exists
+    projectLink: "https://automatic-tig-mig-welding.netlify.app/", // Must write NA in project link if it do not exists
+  },
+
+  {
+    projectName: "4 DOF Robotic Arm",
+    projectDomain: "Robotics, Computer Vision, React.js, Tailwind CSS",
+    projectDescription:
+      "This project is made during internship in SSPL DRDO in July 2025. Currently, it is detecting and picking red colored objects selectively.",
+    projectVideo: "NA", // Must write NA in project video link if it do not exists
+    projectCode: "NA", // Must write NA in project code link if it do not exists
+    projectLink: "NA", // Must write NA in project link if it do not exists
   },
 ];
 
