@@ -4,7 +4,7 @@ export const aboutSection = {
   aboutImage: "/myImage.png", // Rename it with your image name and must paste that image in public folder
   aboutProfession: "MERN & ML Developer",
   aboutDescription:
-    "I'm Amaan Naseh, a Full Stack Web Developer with a keen interest in building scalable and innovative web applications. Currently, I'm pursuing my B.Tech in Automation and Robotics at GGSIPU. My skill set includes the MERN stack (MongoDB, Express.js, React.js, Node.js), AI/ML, and IoT, and I'm constantly learning to enhance my technical expertise. I’ve completed certifications in Full Stack Web Development and AIML, and I’ve developed projects like EduShala, an AI-powered educational platform. In addition to my academic pursuits, I’ve won HackJMI 2025 and ICAPIE 2024, showcasing my passion for solving complex problems through technology",
+    "I'm Amaan Naseh, a Full Stack Web Developer with a keen interest in building scalable and innovative web applications. Currently, I'm pursuing my B.Tech in Automation and Robotics at GGSIPU. My skill set includes the MERN stack (MongoDB, Express.js, React.js, Node.js), AI/ML, and IoT, and I'm constantly learning to enhance my technical expertise. I’ve completed certifications in Full Stack Web Development and AIML, and I’ve developed projects like EduShala, an AI-powered educational platform. In addition to my academic pursuits, I’ve won HackJMI 2025, ICAPIE 2024 and Glide 5 Years Challenge in 2023, showcasing my passion for solving complex problems through technology",
   aboutLinkedin: "http://linkedin.com/in/amaan-naseh", // Must write NA in linkedin link if it do not exists
   aboutGithub: "https://github.com/AmaanNaseh", // Must write NA in github link if it do not exists
   aboutFacebook: "NA", // Must write NA in facebook link if it do not exists
@@ -345,10 +345,18 @@ export const extraSection = [
   },
 
   {
-    extraTitle: "University Topper 2023",
+    extraTitle: "University Topper of 2023",
     extraDescription:
       "I topped in 3rd semester by scoring 9.92 CGPA in overall GGSIPU university",
     extraLink:
       "https://www.ipuranklist.com/ranklist/btech?batch=22&branch=AR&insti=190&sem=3", // Must write NA in extra link if it do not exists
+  },
+
+  {
+    extraTitle: "Glide 5 Years Challenge, 2023",
+    extraDescription:
+      "I won 5 years challenge of No Code App Development in Glide by building portfolio app",
+    extraLink:
+      "https://www.glideapps.com/blog/five-years-of-glide-challenge-winners", // Must write NA in extra link if it do not exists
   },
 ];
