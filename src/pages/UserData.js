@@ -14,9 +14,77 @@ export const aboutSection = {
 
 export const certificationSection = [
   {
+    certificationInstitute: "Udemy",
+    certificationCourse: "C++ Beginner to Advanced",
+    certificationDuration: "14 April 2025",
+    certificationDescription:
+      "Learnt about C++ basic syntax, variables, conditional statements, loops, functions, pointers, file handling, STL, OOPS & Menu Driver Programs",
+    certificationLink:
+      "https://www.udemy.com/certificate/UC-a162f47e-eae2-41e5-a63a-5baec9789336", // Must write NA in certification link if it do not exists
+  },
+
+  {
+    certificationInstitute: "DevTown",
+    certificationCourse: "Full Stack Web Development",
+    certificationDuration: "29 July 2024",
+    certificationDescription:
+      "Learnt about HTML, CSS, JavaScript, MongoDB, Express.js, React.js, Node.js (MERN Stack) and Tailwind CSS",
+    certificationLink: "https://www.cert.devtown.in/verify/c9pUPp1y", // Must write NA in certification link if it do not exists
+  },
+
+  {
+    certificationInstitute: "Pantech Solutions",
+    certificationCourse: "Data Analytics",
+    certificationDuration: "2 March 2024",
+    certificationDescription:
+      "Learnt about MS Excel, Tableau, PowerBI, PowerQuery, Pandas, Matplotlib and Seaborn",
+    certificationLink:
+      "https://drive.google.com/file/d/1zsiHQqviJN4f7jNxbfRZTvoVKg56Gfs6/view?usp=sharing", // Must write NA in certification link if it do not exists
+  },
+
+  {
+    certificationInstitute: "Pantech Solutions",
+    certificationCourse: "Deep Learning",
+    certificationDuration: "21 Feb 2024",
+    certificationDescription:
+      "Learnt about Computer Vision, Neural Networks (ANN, CNN, DNN, RNN) and Frameworks (Tensorflow, Keras, YOLO)",
+    certificationLink:
+      "https://drive.google.com/file/d/1NZlcpzYlDOyptSZIRwt_japmNQNW13ER/view?usp=sharing", // Must write NA in certification link if it do not exists
+  },
+
+  {
+    certificationInstitute: "Pantech Solutions",
+    certificationCourse: "Machine Learning",
+    certificationDuration: "21 Feb 2024",
+    certificationDescription:
+      "Learnt about supervised, unsupervised and reinforcement learning along with some classification and regression algorithms",
+    certificationLink:
+      "https://drive.google.com/file/d/1Pk0fsc11uP0N6YQYktLcQ4VWHjTKhgGx/view?usp=sharing", // Must write NA in certification link if it do not exists
+  },
+
+  {
+    certificationInstitute: "Pantech Solutions",
+    certificationCourse: "Artificial Intelligence",
+    certificationDuration: "8 Feb 2024",
+    certificationDescription:
+      "Learnt about different subsets of Artificial Intelligence including Machine Learnng, Deep Learning, Data Analytics, Computer Vision and Natural Language Processing",
+    certificationLink:
+      "https://drive.google.com/file/d/18A8ZI-G_Qsxq3gZ1WTsKeph_96EjgtvI/view?usp=sharing", // Must write NA in certification link if it do not exists
+  },
+
+  {
+    certificationInstitute: "Pantech Solutions",
+    certificationCourse: "Python",
+    certificationDuration: "23 Jan 2024",
+    certificationDescription: "Learnt about python programming language",
+    certificationLink:
+      "https://drive.google.com/file/d/1d457-6Fd2pind9u1glkNOifur7iDVeTI/view?usp=sharing", // Must write NA in certification link if it do not exists
+  },
+
+  {
     certificationInstitute: "Google",
     certificationCourse: "Google Cloud Foundational Tasks",
-    certificationDuration: "October 2023",
+    certificationDuration: "23 October 2023",
     certificationDescription:
       "Performed foundational tasks in Google Cloud Platform (GCP) by completing all labs in Google Cloud Study Jams, October 2023",
     certificationLink:
@@ -25,12 +93,32 @@ export const certificationSection = [
 
   {
     certificationInstitute: "Kodacy",
-    certificationCourse: "Robotics Virtual Internship",
-    certificationDuration: "October 2023",
+    certificationCourse: "Electric Vehicles Technology",
+    certificationDuration: "15 October 2023",
+    certificationDescription:
+      "Utilized Virtual Lab of Kodacy to build projects which helped me to understand about electric vehicles without purchasing expensive components",
+    certificationLink:
+      "https://courses.kodacy.com/kodacy-certificate/?cert_hash=b4d79ddf50cfc63a", // Must write NA in certification link if it do not exists
+  },
+
+  {
+    certificationInstitute: "Kodacy",
+    certificationCourse: "Robotics",
+    certificationDuration: "8 October 2023",
     certificationDescription:
       "Utilized Virtual Lab of Kodacy to build projects which helped me to understand robotics without purchasing expensive components",
     certificationLink:
-      "https://kodacy.com/tutor-certificate/?cert_hash=cf3cd8407e8544d5", // Must write NA in certification link if it do not exists
+      "https://courses.kodacy.com/kodacy-certificate/?cert_hash=cf3cd8407e8544d5", // Must write NA in certification link if it do not exists
+  },
+
+  {
+    certificationInstitute: "Kodacy",
+    certificationCourse: "No Code App Development",
+    certificationDuration: "6 October 2023",
+    certificationDescription:
+      "Learnt about no code app development and built some projects using Glide platform",
+    certificationLink:
+      "https://courses.kodacy.com/kodacy-certificate/?cert_hash=9ad6bef167901f3b", // Must write NA in certification link if it do not exists
   },
 ];
 
@@ -197,16 +285,6 @@ export const internshipSection = [
     internshipLink:
       "https://drive.google.com/file/d/1l9a9cBoY1yrzeogckGQcvACG6XqYSZwO/view?usp=drive_link", // Must write NA in internship link if it do not exists
   },
-
-  {
-    internshipInstitute: "Pantech Solutions",
-    internshipTopic: "Datascience",
-    internshipDuration: "Dec 2023 - March 2024",
-    internshipDescription:
-      "Learnt a lot about datascience and built some prod level projects in machine learning, deep learning, computer vision and data analytics",
-    internshipLink:
-      "https://drive.google.com/file/d/1lANWCGNXW4Cmr1m3VXR1lO-FC3e0NbcM/view?usp=drive_link", // Must write NA in internship link if it do not exists
-  },
 ];
 
 export const skillSection = [
@@ -254,17 +332,23 @@ export const extraSection = [
     extraTitle: "HackJMI 2025 Winner",
     extraDescription:
       "I have led my team Fretria to win a national level hackathon among 120+ competitors in February 2025",
+    extraLink:
+      "https://hackjmi2025.devfolio.co/projects?prizes=c58b05f0980e40f9ada303d1c44d5a99&show_winners=false", // Must write NA in extra link if it do not exists
   },
 
   {
     extraTitle: "ICAPIE 2024 Winner",
     extraDescription:
       "I won the best research/review paper award in ICAPIE 2024 (international conference) among 1000+ participants",
+    extraLink:
+      "https://drive.google.com/file/d/1P8Mt3gZ88riFJyg3wDSVHQWnx2zyCG3R/view?usp=sharing", // Must write NA in extra link if it do not exists
   },
 
   {
     extraTitle: "University Topper 2023",
     extraDescription:
       "I topped in 3rd semester by scoring 9.92 CGPA in overall GGSIPU university",
+    extraLink:
+      "https://www.ipuranklist.com/ranklist/btech?batch=22&branch=AR&insti=190&sem=3", // Must write NA in extra link if it do not exists
   },
 ];

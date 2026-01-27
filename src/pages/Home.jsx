@@ -382,24 +382,19 @@ const PTemplate7 = () => {
             About <span className="text-[#3B38A0]">MYSELF</span>
           </h1>
 
-          <div className="flex flex-col md:flex-row items-center justify-center gap-20">
-            <div className="lg:max-w-[60%] flex flex-col items-center justify-center gap-10">
-              <p className="text-justify text-sm lg:text-md">
-                {aboutSection.aboutDescription}
-              </p>
-              <a
-                href={resume}
-                target="_blank"
-                rel="noreferrer"
-                download
-                className="px-4 py-2 md:px-6 md:py-3 md:text-md lg:text-lg font-bold bg-[#3B38A0] text-[#FFFFF0] shadow-[8px_8px_0_0_rgba(0,0,0,1)] hover:scale-110 transition-all duration-200"
-              >
-                Download Resume
-              </a>
-            </div>
-            <div className="w-[300px] hidden lg:block">
-              <img src={aboutSection.aboutImage} alt="" className="w-full" />
-            </div>
+          <div className="flex flex-col items-center justify-center gap-10">
+            <p className="text-justify text-sm lg:text-md">
+              {aboutSection.aboutDescription}
+            </p>
+            <a
+              href={resume}
+              target="_blank"
+              rel="noreferrer"
+              download
+              className="px-4 py-2 md:px-6 md:py-3 md:text-md lg:text-lg font-bold bg-[#3B38A0] text-[#FFFFF0] shadow-[8px_8px_0_0_rgba(0,0,0,1)] hover:scale-110 transition-all duration-200"
+            >
+              Download Resume
+            </a>
           </div>
         </div>
 
@@ -759,7 +754,7 @@ const PTemplate7 = () => {
               <>
                 <div
                   key={index}
-                  className="flex flex-col items-center gap-8 w-[300px] min-h-[200px] bg-[#FFFFFF] text-black shadow-[1px_1px_10px_0_rgba(0,0,0,0.2)]"
+                  className="flex flex-col items-center gap-8 min-w-[300px] max-w-[350px] min-h-[250px] bg-[#FFFFFF] text-black shadow-[1px_1px_10px_0_rgba(0,0,0,0.2)]"
                 >
                   <p className="w-full bg-[#3B38A0] text-white p-4 text-center font-bold">
                     {item.extraTitle}
@@ -767,6 +762,16 @@ const PTemplate7 = () => {
                   <p className="text-sm text-justify max-w-[275px]">
                     {item.extraDescription}
                   </p>
+                  <a
+                    href={item.extraLink !== "NA" ? item.extraLink : ""}
+                    target="_blank"
+                    rel="noreferrer"
+                    className={`px-4 py-2 text-sm font-bold bg-[#3B38A0] text-[#FFFFF0] shadow-[4px_4px_0_0_rgba(0,0,0,1)] cursor-pointer hover:scale-110 transition-all duration-200 ${
+                      item.extraLink !== "NA" ? "" : "hidden"
+                    }`}
+                  >
+                    View
+                  </a>
                 </div>
               </>
             );
