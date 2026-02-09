@@ -15,6 +15,16 @@ export const aboutSection = {
 export const certificationSection = [
   {
     certificationInstitute: "Udemy",
+    certificationCourse: "Data Structures & Algorithms",
+    certificationDuration: "9 February 2026",
+    certificationDescription:
+      "Studied Array, Matrices, String, Linked List, Stack, Queues, Trees (BST, AVL, B-Tree), Heap, Graphs & coded their ADT classes. Learnt about optimization techniques (Sorting, Hashing) and Algorithm Strategies (Divide and Conquer, Greedy, Dynamic Programming and Backtracking)",
+    certificationLink:
+      "https://www.udemy.com/certificate/UC-3b140bd3-9a66-4aa8-93e9-b386b9cfda45/", // Must write NA in certification link if it do not exists
+  },
+
+  {
+    certificationInstitute: "Udemy",
     certificationCourse: "C++ Beginner to Advanced",
     certificationDuration: "14 April 2025",
     certificationDescription:
