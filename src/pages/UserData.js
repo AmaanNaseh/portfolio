@@ -337,6 +337,26 @@ export const educationSection = [
   },
 ];
 
+export const researchSection = [
+  {
+    researchTitle:
+      "A Multi-Level AI Based Agri-Tech Solution for Precision Farming",
+    researchType: "Research Paper",
+    researchDuration: "4 March, 2026",
+    researchLink:
+      "https://www.ijsred.com/volume9/issue2/paper-details/IJSRED-V9I2P8.html",
+  },
+
+  {
+    researchTitle:
+      "Lung Cancer Classification Using Deep Learning Coupled with Medical Imaging Techniques to Assist Early Diagnostics",
+    researchType: "Research Paper",
+    researchDuration: "4 March, 2026",
+    researchLink:
+      "https://www.ijsred.com/volume9/issue2/paper-details/IJSRED-V9I2P9.html",
+  },
+];
+
 export const extraSection = [
   {
     extraTitle: "HackJMI 2025 Winner",

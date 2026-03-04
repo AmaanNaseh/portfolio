@@ -10,6 +10,7 @@ import {
   internshipSection,
   projectSection,
   freelanceSection,
+  researchSection,
   // skillSection,
 } from "./UserData";
 
@@ -715,6 +716,50 @@ const PTemplate7 = () => {
                     </p>
                     <p>{item.educationDuration}</p>
                     <p>{item.educationPercentage}</p>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+
+        {/* Researches */}
+
+        <div className="my-20 md:my-32 px-10">
+          <h1 className="text-2xl lg:text-4xl font-bold mb-8 text-center">
+            Research <span className="text-[#3B38A0]">BACKGROUND</span>
+          </h1>
+
+          <div
+            name="researchSection"
+            className="flex flex-col items-center justify-center md:flex-row md:flex-wrap gap-16"
+          >
+            {researchSection.map((item, index) => {
+              return (
+                <div
+                  key={index}
+                  className="min-w-[300px] max-w-[350px] md:min-w-[400px] md:max-w-[450px] min-h-[250px] bg-[#ffffff] text-black z-10 shadow-[1px_1px_10px_0_rgba(0,0,0,0.2)]"
+                >
+                  <div
+                    className={`w-full text-center p-4 bg-[#3B38A0] text-white`}
+                  >
+                    <p className="font-bold">{item.researchType}</p>
+                  </div>
+                  <div className="mx-auto flex flex-col items-center justify-center gap-5 my-7">
+                    <p className="text-sm font-semibold px-4 text-justify">
+                      {item.researchTitle}
+                    </p>
+                    <p>{item.researchDuration}</p>
+                    <a
+                      href={item.researchLink !== "NA" ? item.researchLink : ""}
+                      target="_blank"
+                      rel="noreferrer"
+                      className={`px-4 py-2 text-sm font-bold bg-[#3B38A0] text-[#FFFFF0] shadow-[4px_4px_0_0_rgba(0,0,0,1)] cursor-pointer hover:scale-110 transition-all duration-200 ${
+                        item.researchLink !== "NA" ? "" : "hidden"
+                      }`}
+                    >
+                      View Publication
+                    </a>
                   </div>
                 </div>
               );
