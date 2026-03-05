@@ -343,8 +343,7 @@ export const researchSection = [
       "A Multi-Level AI Based Agri-Tech Solution for Precision Farming",
     researchType: "Research Paper",
     researchDuration: "4 March, 2026",
-    researchLink:
-      "https://www.ijsred.com/volume9/issue2/paper-details/IJSRED-V9I2P8.html",
+    researchLink: "https://doi.org/10.5281/zenodo.18871968",
   },
 
   {
@@ -352,8 +351,7 @@ export const researchSection = [
       "Lung Cancer Classification Using Deep Learning Coupled with Medical Imaging Techniques to Assist Early Diagnostics",
     researchType: "Research Paper",
     researchDuration: "4 March, 2026",
-    researchLink:
-      "https://www.ijsred.com/volume9/issue2/paper-details/IJSRED-V9I2P9.html",
+    researchLink: "https://doi.org/10.5281/zenodo.18871983",
   },
 ];
 

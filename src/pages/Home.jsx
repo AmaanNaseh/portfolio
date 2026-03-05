@@ -758,7 +758,7 @@ const PTemplate7 = () => {
                         item.researchLink !== "NA" ? "" : "hidden"
                       }`}
                     >
-                      View Publication
+                      View Publication (DOI)
                     </a>
                   </div>
                 </div>
