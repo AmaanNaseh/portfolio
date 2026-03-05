@@ -342,7 +342,7 @@ export const researchSection = [
     researchTitle:
       "A Multi-Level AI Based Agri-Tech Solution for Precision Farming",
     researchType: "Research Paper",
-    researchDuration: "4 March, 2026",
+    researchDuration: "5 March, 2026",
     researchLink: "https://doi.org/10.5281/zenodo.18871968",
   },
 
@@ -350,7 +350,7 @@ export const researchSection = [
     researchTitle:
       "Lung Cancer Classification Using Deep Learning Coupled with Medical Imaging Techniques to Assist Early Diagnostics",
     researchType: "Research Paper",
-    researchDuration: "4 March, 2026",
+    researchDuration: "5 March, 2026",
     researchLink: "https://doi.org/10.5281/zenodo.18871983",
   },
 ];
