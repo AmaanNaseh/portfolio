@@ -22,11 +22,10 @@ import {
   FaLinkedinIn,
   FaArrowUp,
 } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
-import { FiFacebook, FiGithub } from "react-icons/fi";
-import { GrInstagram } from "react-icons/gr";
+import { FiGithub } from "react-icons/fi";
 import { RxCross1 } from "react-icons/rx";
 import { IoMdMenu, IoIosLink } from "react-icons/io";
+import { SiResearchgate } from "react-icons/si";
 
 // Resume
 import resume from "../assets/resume.pdf";
@@ -750,6 +749,8 @@ const PTemplate7 = () => {
                       {item.researchTitle}
                     </p>
                     <p>{item.researchDuration}</p>
+                    <p>DOI: {item.researchDOI}</p>
+
                     <a
                       href={item.researchLink !== "NA" ? item.researchLink : ""}
                       target="_blank"
@@ -758,7 +759,22 @@ const PTemplate7 = () => {
                         item.researchLink !== "NA" ? "" : "hidden"
                       }`}
                     >
-                      View Publication (DOI)
+                      View by DOI
+                    </a>
+
+                    <a
+                      href={
+                        item.researchGateLink !== "NA"
+                          ? item.researchGateLink
+                          : ""
+                      }
+                      target="_blank"
+                      rel="noreferrer"
+                      className={`px-4 py-2 text-sm font-bold bg-[#3B38A0] text-[#FFFFF0] shadow-[4px_4px_0_0_rgba(0,0,0,1)] cursor-pointer hover:scale-110 transition-all duration-200 ${
+                        item.researchGateLink !== "NA" ? "" : "hidden"
+                      }`}
+                    >
+                      View at Research Gate
                     </a>
                   </div>
                 </div>
@@ -834,6 +850,7 @@ const PTemplate7 = () => {
               name="contactSection"
               className="flex flex-col lg:flex-row flex-wrap items-center justify-center px-4 md:px-10 gap-10 text-black"
             >
+              {/* Linkedin */}
               <div
                 className={`bg-[#ffffff] px-8 py-7 flex items-center justify-between min-w-[325px] ${
                   aboutSection.aboutLinkedin !== "NA" ? "" : "hidden"
@@ -856,50 +873,7 @@ const PTemplate7 = () => {
                 </a>
               </div>
 
-              <div
-                className={`bg-[#ffffff] px-8 py-7 flex items-center justify-between min-w-[325px] ${
-                  aboutSection.aboutInstagram !== "NA" ? "" : "hidden"
-                }`}
-              >
-                <p className="flex items-center justify-center gap-3 font-bold text-lg">
-                  <GrInstagram className="text-[#3B38A0]" /> Instagram
-                </p>
-                <a
-                  href={
-                    aboutSection.aboutInstagram !== "NA"
-                      ? aboutSection.aboutInstagram
-                      : ""
-                  }
-                  target="_blank"
-                  rel="noreferrer"
-                  className="px-4 py-3 text-xs font-semibold bg-[#3B38A0] text-[#FFFFF0] shadow-[5px_5px_0_0_rgba(0,0,0,1)] hover:scale-110 transition-all duration-200"
-                >
-                  Connect
-                </a>
-              </div>
-
-              <div
-                className={`bg-[#ffffff] px-8 py-7 flex items-center justify-between min-w-[325px] ${
-                  aboutSection.aboutFacebook !== "NA" ? "" : "hidden"
-                }`}
-              >
-                <p className="flex items-center justify-center gap-3 font-bold text-lg">
-                  <FiFacebook className="text-[#3B38A0]" /> Facebook
-                </p>
-                <a
-                  href={
-                    aboutSection.aboutFacebook !== "NA"
-                      ? aboutSection.aboutFacebook
-                      : ""
-                  }
-                  target="_blank"
-                  rel="noreferrer"
-                  className="px-4 py-3 text-xs font-semibold bg-[#3B38A0] text-[#FFFFF0] shadow-[5px_5px_0_0_rgba(0,0,0,1)] hover:scale-110 transition-all duration-200"
-                >
-                  Connect
-                </a>
-              </div>
-
+              {/* Github */}
               <div
                 className={`bg-[#ffffff] px-8 py-7 flex items-center justify-between min-w-[325px] ${
                   aboutSection.aboutGithub !== "NA" ? "" : "hidden"
@@ -922,18 +896,19 @@ const PTemplate7 = () => {
                 </a>
               </div>
 
+              {/* Research Gate */}
               <div
                 className={`bg-[#ffffff] px-8 py-7 flex items-center justify-between min-w-[325px] ${
-                  aboutSection.aboutTwitter !== "NA" ? "" : "hidden"
+                  aboutSection.aboutResearchGate !== "NA" ? "" : "hidden"
                 }`}
               >
                 <p className="flex items-center justify-center gap-3 font-bold text-lg">
-                  <FaXTwitter className="text-[#3B38A0]" /> Twitter
+                  <SiResearchgate className="text-[#3B38A0]" /> Research Gate
                 </p>
                 <a
                   href={
-                    aboutSection.aboutTwitter !== "NA"
-                      ? aboutSection.aboutTwitter
+                    aboutSection.aboutResearchGate !== "NA"
+                      ? aboutSection.aboutResearchGate
                       : ""
                   }
                   target="_blank"
